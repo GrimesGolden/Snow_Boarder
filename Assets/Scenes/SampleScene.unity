@@ -375,81 +375,121 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -3.035172, y: -3.9744828, z: 0}
-      leftTangent: {x: 0.53597367, y: -0.00048214197, z: -0}
-      rightTangent: {x: -0.23539662, y: 0.0002117157, z: 0}
+    - position: {x: 2.6436644, y: -10.803463, z: 0}
+      leftTangent: {x: 0.53597355, y: -0.00048065186, z: 0}
+      rightTangent: {x: -0.23539734, y: 0.0002117157, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: -12.598854, y: -2.4923031, z: 0}
-      leftTangent: {x: 3.40829, y: -1.9835094, z: 0}
-      rightTangent: {x: -4.351735, y: 2.532414, z: 0}
+    - position: {x: -10.514217, y: -8.027372, z: 0}
+      leftTangent: {x: 3.40829, y: -1.9834995, z: 0}
+      rightTangent: {x: -1.5220947, y: 0.88575697, z: 0}
+      mode: 1
+      height: 1
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: -20.097118, y: -3.342152, z: 0}
+      leftTangent: {x: 0.93393326, y: -1.1942186, z: 0}
+      rightTangent: {x: -1.7394676, y: 2.2202954, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
     - position: {x: -18.372135, y: 5.1924753, z: 0}
-      leftTangent: {x: -0.5621147, y: 0.00059223175, z: 0}
-      rightTangent: {x: 0.27148914, y: -0.0002861023, z: 0}
+      leftTangent: {x: -0.36550522, y: 0.00038528442, z: 0}
+      rightTangent: {x: 0.060861588, y: -0.00006389618, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: -8.809195, y: 2.5617492, z: 0}
-      leftTangent: {x: -4.4095793, y: 2.5393643, z: 0}
-      rightTangent: {x: 4.4703145, y: -2.5743403, z: -0}
+    - position: {x: -14.238455, y: 4.565075, z: 0}
+      leftTangent: {x: -1.1036892, y: 0.7899065, z: 0}
+      rightTangent: {x: 2.0747852, y: -1.4849186, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 0.06611723, y: 3.1087186, z: 0}
-      leftTangent: {x: -4.8289857, y: -2.6034677, z: 0}
-      rightTangent: {x: 4.59942, y: 2.479701, z: -0}
+    - position: {x: -8.775273, y: -3.7015858, z: 0}
+      leftTangent: {x: -1.4746647, y: 1.7340188, z: 0}
+      rightTangent: {x: 2.4140425, y: -2.8390918, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 8.105646, y: 2.8848946, z: 0}
-      leftTangent: {x: -3.855538, y: -1.8945972, z: 0}
-      rightTangent: {x: 4.668205, y: 2.2939386, z: -0}
+    - position: {x: -1.7645617, y: -5.920563, z: 0}
+      leftTangent: {x: -1.5264587, y: -0.4217348, z: 0}
+      rightTangent: {x: 1.5364456, y: 0.4244933, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 21.147749, y: 4.7327075, z: 0}
-      leftTangent: {x: -3.7959328, y: -2.2078598, z: 0}
-      rightTangent: {x: 4.2969503, y: 2.4992704, z: -0}
+    - position: {x: 2.7261686, y: -1.1856446, z: 0}
+      leftTangent: {x: -1.5481806, y: -2.7222004, z: 0}
+      rightTangent: {x: 2.0163136, y: 3.5453944, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 27.433727, y: 5.43981, z: 0}
-      leftTangent: {x: -0.27808952, y: -0.00047016144, z: 0}
-      rightTangent: {x: 0.5204792, y: 0.0008802414, z: 0}
+    - position: {x: 7.829589, y: 1.4553869, z: 0}
+      leftTangent: {x: -1.6755981, y: 2.611932, z: 0}
+      rightTangent: {x: 0.9876709, y: -1.5395854, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 14.721558, y: -3.0141718, z: 0}
-      leftTangent: {x: 3.5237942, y: 2.013504, z: 0}
-      rightTangent: {x: -3.2501068, y: -1.8576763, z: 0}
+    - position: {x: 13.005668, y: -2.1201391, z: 0}
+      leftTangent: {x: -3.5041618, y: 0.27407932, z: 0}
+      rightTangent: {x: 4.2329607, y: -0.33108234, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 5.070345, y: -3.8179312, z: 0}
-      leftTangent: {x: 0.26098537, y: 0.00020265579, z: 0}
-      rightTangent: {x: -0.54391515, y: -0.0004222989, z: -0}
+    - position: {x: 17.88187, y: 6.8385143, z: 0}
+      leftTangent: {x: -1.6134682, y: -1.2226129, z: 0}
+      rightTangent: {x: 2.30093, y: 1.7435379, z: 0}
+      mode: 1
+      height: 1
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 28.034706, y: 4.6429234, z: 0}
+      leftTangent: {x: -1.6365128, y: -3.4915519, z: 0}
+      rightTangent: {x: 2.742836, y: 5.851923, z: 0}
+      mode: 1
+      height: 1
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 43.82328, y: 4.0021296, z: 0}
+      leftTangent: {x: -0.15386963, y: -0.0002603531, z: 0}
+      rightTangent: {x: 0.5204773, y: 0.0008802414, z: 0}
+      mode: 1
+      height: 1
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 35.99922, y: -10.705761, z: 0}
+      leftTangent: {x: 3.5237923, y: 2.0134754, z: 0}
+      rightTangent: {x: -3.2501068, y: -1.8576679, z: 0}
+      mode: 1
+      height: 1
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 21.244244, y: -14.672417, z: 0}
+      leftTangent: {x: 0.26098633, y: 0.00020217896, z: 0}
+      rightTangent: {x: -0.5439224, y: -0.00042152405, z: 0}
       mode: 1
       height: 1
       spriteIndex: 0
@@ -528,8 +568,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 4.4576263, y: 0.97273254, z: 0}
-    m_Extent: {x: 23.425714, y: 5.595852, z: 0}
+    m_Center: {x: 11.6188545, y: -3.7900934, z: 0}
+    m_Extent: {x: 32.746773, y: 11.389818, z: 0}
   m_SpriteSortPoint: 0
 --- !u!4 &2106201491
 Transform:
@@ -540,7 +580,7 @@ Transform:
   m_GameObject: {fileID: 2106201488}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 10.29, y: -1.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
