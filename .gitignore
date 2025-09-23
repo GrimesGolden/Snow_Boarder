@@ -1,0 +1,16 @@
+# Unity generated
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+AssetStore-5.x/
+
+# OS / IDE files
+.DS_Store
+.vscode/
+*.csproj
+*.sln
+*.user
