@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
@@ -9,7 +7,7 @@ public class FinishLine : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("FInish Is YOU.!");
+            SceneManager.LoadScene(0);
         }
     }
 }
