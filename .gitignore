@@ -14,3 +14,4 @@ AssetStore-5.x/
 *.csproj
 *.sln
 *.user
+.vs/
