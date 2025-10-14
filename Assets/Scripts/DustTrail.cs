@@ -20,7 +20,15 @@ public class DustTrail : MonoBehaviour
     {
         t += Time.deltaTime;
 
-        if (t >= 2)
+        if (t >= 5)
+        {
+            vcam.m_Lens.OrthographicSize = 30f;
+        }
+        else if (t >= 3)
+        {
+            vcam.m_Lens.OrthographicSize = 20f;
+        }
+        else if (t >= 2)
         {
             vcam.m_Lens.OrthographicSize = 15f;
         }
