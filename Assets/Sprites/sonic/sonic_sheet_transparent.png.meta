@@ -1,0 +1,4210 @@
+fileFormatVersion: 2
+guid: 467f9e8f2d2e15241be2241de345b9f3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 551
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13c85dac1d192c4c80d270777e00f54
+      internalID: -1269303180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 551
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ade4daf9b8b6574aaacf8d65d1feb91
+      internalID: 525163779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 551
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f74e15870cfc9468aaa2347b7f3b49
+      internalID: 97027470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 551
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0a6077efd9c0140b37e0d2a06667f5
+      internalID: 1960328111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 551
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0358e8b839717a14f95087ca854b7650
+      internalID: -1976855328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 551
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9e69a4dd6d58b4f9ee45b414454f76
+      internalID: 848711765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 551
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce9266a099aec64ba7e27130f676e24
+      internalID: -1523579366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 551
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54247f5a29090545bbd4f3562eded69
+      internalID: -1579515495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 551
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e451e6589715c9b40ac1125497cd8c32
+      internalID: 922620670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 551
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03bf0f3edab008429423218276963af
+      internalID: -403820460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 551
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df31337f938d50a4eb85e689d65cad1a
+      internalID: 1765063083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 551
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3aee04db0ea5344804911903698236
+      internalID: -2127452218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 551
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b4a93be5a27594483b84ea9033aa59
+      internalID: -700597075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 551
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d446f0468a3ba438e34b8cd7f8e452
+      internalID: -1994491754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 551
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f579c1a9282bdc44db2526de22d04346
+      internalID: -1194258686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 552
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0510e5e0b31a0d941be116377c7dbeda
+      internalID: 1500128577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 551
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3faf57127565e24a9042f43b41175ff
+      internalID: -612358631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 551
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d60db60974c064bacb6042df647645
+      internalID: -744217871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 499
+        width: 45
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca91d10f6329a348bb45fed88dc2aa2
+      internalID: 1191578603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 552
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90be230041936048986ffa9e6706937
+      internalID: -1940894409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 499
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35c66b8b1fe1da44af3e681ab41cba0
+      internalID: 806402716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 499
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a1e2f392abd79498ab5942a6d03101
+      internalID: -55853450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 499
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbbdc540b5f62e44acbad029e337407
+      internalID: -921418371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 499
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c8bb700c7eaeb4b880ef8be29b5030
+      internalID: -557721046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 499
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1200fdcd03aeb4b409324ae6daa81273
+      internalID: 62817912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 499
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ee55c994a30ec47867794f8067544c
+      internalID: 1930653396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 499
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9354df8222cb91441917434e40fb087b
+      internalID: 1611793158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_27
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 499
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead39b04d32981540bc0f4fe803c3dc6
+      internalID: 964298459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_28
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 499
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f30283917221444953247174f6428d
+      internalID: 2089980260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_29
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 499
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc828c31465c844d84af70d205be7d6
+      internalID: -785099303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_30
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 499
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86008857b4b9384497c8a4672830df9
+      internalID: 1713997016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_31
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 499
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6a10eaba58c53488911b4f48cd7a5f
+      internalID: -1318037495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_32
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 499
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24054b5becb09144aa44fc745d18a29c
+      internalID: 669087875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_33
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 499
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e247fc44e12a6044b425259b422fce7
+      internalID: 365588643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_34
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 499
+        width: 36
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ab07f4fc028154c8bf4651b86b1220
+      internalID: -1572460105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_35
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 499
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f170c393c21fe42aa8ba25b4b5a17a
+      internalID: -773912579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_36
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 499
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c7b4bbcd1bf8948bbc831b2c885ced
+      internalID: 418125826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_37
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 499
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef335368f8a7924f88f61ce61ccc57c
+      internalID: -1216411244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_38
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 499
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c6e9f93d99dcd4584610e523febc45
+      internalID: 766410931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_39
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 499
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bb0e0e4cf69fc479157c961c859d63
+      internalID: -1727202929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_40
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 499
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5822f91860fe54948815490ad0fee51d
+      internalID: 556602618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 449
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9333c8f486deace4c90118067aae3f99
+      internalID: -1379838954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_42
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 449
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d873c539ffe1eb34d83273186b2d5cf9
+      internalID: 617943169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_43
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 449
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caaad46b0501bd24e97d5a1f3ed8f006
+      internalID: 1925275673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_44
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 449
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c761364c3e0e04b4ca1a07cd0f15d7f9
+      internalID: -41315085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_45
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 449
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03a06381b9298b4c9a601ee5aa0c7fe
+      internalID: 535068785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_46
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 449
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddb5c66eec0d7b46a8437fd390b0195
+      internalID: -860625185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_47
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 449
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994dfca080a6f8c4e96b1dde5b7eb934
+      internalID: 348158142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_48
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 449
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a487b70485da9845891da147b55c4e1
+      internalID: 1498569575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_49
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 449
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f5fea01fd39754aab239e934f3ea12
+      internalID: -977248059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_50
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 449
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16fb1a9a24d484043bfb64709bd2b372
+      internalID: -1842065751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_51
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 449
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ee85143eb7a484882327fba335a217
+      internalID: -1358665596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_52
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 449
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac08d1a8d44b3224a8911a0b896501c7
+      internalID: -638752211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_53
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 449
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ab6fc9c3961db44a35e0eb1a058973
+      internalID: -27502251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_54
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 449
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c942e7ccfdabb4d81425d680898b4c
+      internalID: 289938193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_55
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 449
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f04f2bf8be70ab4190bd3f4e214bda6
+      internalID: -17409603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_56
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 449
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1aec7e5fc553a46963032bc8e13125
+      internalID: 1595775439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_57
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 449
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024cdc0146bc5a249aef29833cbdbf3a
+      internalID: -94022406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_58
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 450
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad78b1fe8846c89488b6c0d1658952d7
+      internalID: 1892297668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_59
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 449
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c064800b6bea29342912ec1da8076718
+      internalID: 555982458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_60
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 449
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046c5e0116277bc4f825678a0ffd2464
+      internalID: 351157450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_61
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 449
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ba8c7003bc7ba498997414c1572c48
+      internalID: -1310352676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_62
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 449
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c38d883da9a1342b1764ce4900c277
+      internalID: 470952442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_63
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 449
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6d02a9942cc6b409fd9918f5a294ab
+      internalID: 1506004323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_64
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 449
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beacf9586a133114bab7b8321983a4ed
+      internalID: 169513751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 389
+        width: 57
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ac5df6164bb45498640219522abfe7
+      internalID: 1500452607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_66
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 414
+        width: 56
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7fe4b3b0621ed43aae111406324ab6
+      internalID: -1265835132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_67
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 389
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d559fd14dc2a6b44a695e74ee43a4f8
+      internalID: -1427273019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_68
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 389
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23dd8d3500a16bf4da32571ba7f179a5
+      internalID: -839097575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_69
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 389
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3415b06a1f0ca1348b4ef090fa7ddd13
+      internalID: 1482792129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_70
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 389
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c181304d06b21694a9df45bccee24ccb
+      internalID: -1532097886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_71
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 389
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e690017c5ea7d6c42b4d7761654df75f
+      internalID: -1731532169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_72
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 389
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8967d6bb7971b4646b8b6ef93d4d20a2
+      internalID: 375321858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_73
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 389
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4367781a564ff04688a52f6505479b5
+      internalID: 1142238882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_74
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 389
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107e1a539718eb346b33de0b9c2cfc00
+      internalID: 1247586147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_75
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 389
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800959139b636774b8132c0fa7cee24a
+      internalID: 1783037924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_76
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 389
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfd61db7c3dc0143814cef13b914c2d
+      internalID: 1576905491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_77
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 389
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a291d8af7ab2194aab3631ed2ed58d2
+      internalID: 1566889387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_78
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 389
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3772d008748174eb875cae5c6dbe50
+      internalID: -1356453155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_79
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 389
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a167ae107243c74d91b4e687fa45051
+      internalID: -989650338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_80
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 389
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95140f9fe636e7468542c2946600031
+      internalID: 184768294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_81
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 332
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324adfed7a1f4ef43beabc6006006fb9
+      internalID: -655201449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 332
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87907b94dd451eb4e841ec25212f51de
+      internalID: 1845418321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_83
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 332
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5153abf0f429d8c4db0f0c9b050d92a7
+      internalID: -2131109777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_84
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 332
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d3c2eb69f548a45ba42be163cd8d6d
+      internalID: -591763843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_85
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 332
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f847f7d7f7e4ed44ea75db44df293af7
+      internalID: 479929159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_86
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 332
+        width: 80
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0b0c4016cdeaa4a9137f7149515326
+      internalID: -375102325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_87
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 332
+        width: 52
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38eb4c980c591bc42af89c83714571d5
+      internalID: 680004178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_88
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 332
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1399cdc1adeaf94594b32d17a9193e4
+      internalID: -1663014604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_89
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 332
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac77c3657c57af4194f3c1ced1d777b
+      internalID: -438013686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_90
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 332
+        width: 86
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240bd4fd78fa1f04f953790757954d60
+      internalID: -2140247653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_91
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 332
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfb3dad28989ee4dab110d13d293a19
+      internalID: -1478520308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_92
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 332
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8918b702f6346d24baac81279a48c377
+      internalID: 1744073577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_93
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 334
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69641a36f3d6a454f8ffb08ce6d3b039
+      internalID: 926061268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_94
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 332
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f839f58bbb5694694894dafdd96054
+      internalID: 1994214043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_95
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 332
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7605c872a845dc047b457068fe0668a0
+      internalID: -881600467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_96
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 332
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa0028d18f5a0848a6b5bd09172e11a
+      internalID: 2128429856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_97
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 332
+        width: 28
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a850b8dd849c244aac2a9aebd96d613
+      internalID: 2124803731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_98
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 332
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517ee0ad937405248878fe39de02de19
+      internalID: 1951869933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_99
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 332
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7db947c76ee804d886b6625269f7c7
+      internalID: 234208071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_100
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 280
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adef852692366a4daebe4bf97ca47f6
+      internalID: 428917883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_101
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 285
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2e3b16e7a502b4db22686515585f29
+      internalID: -742072748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_102
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 291
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab636d994051b64197ab5cbe65da609
+      internalID: -1675708536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_103
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 280
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e6974c0503067409a1659aac13b2f5
+      internalID: 531791263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_104
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 281
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0524ac8076ea3c349b99f5bdd44d711b
+      internalID: 234378951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_105
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 280
+        width: 47
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936b0397e1db3cf41b30529f863f6193
+      internalID: -252356386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_106
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 280
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbf70a0c3befa946b957833f6230cc9
+      internalID: 713366073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_107
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 280
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70bcb272f5242784ebf6ba84b23564de
+      internalID: -303116119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_108
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 280
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8f7e41353ea7a4a89856fbcfdc139e
+      internalID: 125690907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_109
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 280
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8e8e03123d2c848afc63dd8fd4b82d
+      internalID: -960705618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_110
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 280
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b89449b3819d042badc375cf540a6d
+      internalID: -1239144745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_111
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 280
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c84cdb182d024541acf1454037fed28
+      internalID: -200007148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_112
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 280
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331ef7d11e968b045a45272b2ce46f8e
+      internalID: -567612579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_113
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 280
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb6e3f4df8fdd945828b727a11efe5e
+      internalID: 641000714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_114
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 280
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4536ae16ac5fc4b4aada09228a92ae09
+      internalID: -282485948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_115
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 281
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6181ac94275854a9754e0e5daca6b6
+      internalID: -454141878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_116
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 281
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffd1eba41c72b84389fb59edd251538
+      internalID: 128876685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_117
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 281
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a724533e2beb52f4d93139a34c4076cf
+      internalID: -1137356739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_118
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 281
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23884c8a7e69b484f8c75ab194550608
+      internalID: 16727687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_119
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 281
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bec8f40f41f1e044aabc724b382d491
+      internalID: -401250342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_120
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 281
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6272754686c2946929950285b13bbf
+      internalID: 1005965681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_121
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 224
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe831445522bc249b8e23698a56f36f
+      internalID: -697335031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_122
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 234
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9739dcf1dca35db4181039b517ef722e
+      internalID: -777264700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_123
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 224
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04045a6b112a46b4aa7e4dcab8e8e23a
+      internalID: -851226432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_124
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 224
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de03d9d4225b44145aef1580f0e364bf
+      internalID: 663607565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_125
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 224
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29afb4b3bffac7646bc8e77e0881248c
+      internalID: -623459217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_126
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 224
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a92278c9a3ca4438ad948b4079c4aa
+      internalID: -565455086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_127
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 224
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8793997ff123cb45b6b2899373a1712
+      internalID: -891376612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_128
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 224
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11347dbebab22249a1fb0a8797a789d
+      internalID: -201470217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_129
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 224
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f33df1372090f49980432e50bac4aa
+      internalID: -932653718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_130
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 224
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbba0416243965b4ebe165c8fb127063
+      internalID: 2136512018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_131
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 224
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc94979146e234442b56e08a6192f4d0
+      internalID: -1920128652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_132
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 224
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec03d14b5e4d1d4fa06afece6b39587
+      internalID: 412728855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_133
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 224
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a984b01ddb0c37c4db48925beae06ed3
+      internalID: 1409951144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_134
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 224
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7bb3b3f3480e743bae94f49981aaa8
+      internalID: 325235332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_135
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 224
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4f7239a7d863e4387df1e81954036f
+      internalID: 293141785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_136
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 225
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745c058613944284493d280269708121
+      internalID: 1920557480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_137
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 224
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71286197b16bb024cb8240511ec17566
+      internalID: -410985411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_138
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 224
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6df778cb2d59248857c7bd8f055568
+      internalID: -996856744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_139
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 224
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae199aaec526e240b9384ccfc252d59
+      internalID: -852445396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_140
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 224
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406b9aaa244dcad44952a77477669402
+      internalID: 491162901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_141
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 224
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6bada579647144fa9b1f659e63eb5f
+      internalID: 1769763931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_142
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 224
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e029aa17b60c8e54c8f165315d161626
+      internalID: 450793956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_143
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 224
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c0e58b7288575468d888a160387273
+      internalID: -1982540125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_144
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 224
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964079355f4f5454cbc23bd3a7f6944a
+      internalID: -550852330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_145
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 173
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8f3d0162cf0d34ebdc0c25ba5f6168
+      internalID: 553306736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_146
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 173
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60710c60fb0b9347b7c0a4e8f936cec
+      internalID: -1339912584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_147
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 173
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b91ac8d63c4b844b6f397701cd2287
+      internalID: 1181274324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_148
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 173
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d872569d37968340a31bacc0c8fa014
+      internalID: 292132155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_149
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 173
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848dcdac297453d4b812d15af05f0882
+      internalID: 1455507114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_150
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 173
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f2c4ba70ecbf64aaf2a42a9cb349b4
+      internalID: -2117034898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_151
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 173
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf1e13129615c24389a3ac86b99d8f0
+      internalID: -1577150459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_152
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 173
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384226637d26c3445ac106f1d939fe4b
+      internalID: -1367894132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_153
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 173
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcebf4eeb90b0148968e946046beb71
+      internalID: -561390309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_154
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 173
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c23a00370687a4f8a216798f83a98c
+      internalID: 1240575886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_155
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 173
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088e0785fecafa54380fdfd373ddde52
+      internalID: 498027287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_156
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 173
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3cf2e4ff62de44aa01ec4e50975a0f
+      internalID: -1637486935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_157
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 173
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadec1c257952e844bfd1eb846634d2f
+      internalID: 1058176316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_158
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 173
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60872a378a6781147b0aca0e5f63d702
+      internalID: 537394992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_159
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 173
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cfc24a8e09511428a09b37207160af
+      internalID: -453758033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_160
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 173
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0919ed49570ec9d49b3ee7a333e6eae2
+      internalID: 240120523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_161
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 173
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5eda9dbafb2a7e4d9d48c4b7bcb6398
+      internalID: 375093087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_162
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 173
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26167c077aa3b374ab093deae0c338dc
+      internalID: -1282767575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_163
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 173
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729b8a19b60709a469e4bac39572c328
+      internalID: 170953943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_164
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 173
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0260e6ec8317d843b80c5d762b6c1dc
+      internalID: -1569446165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_165
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 173
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91640e58fd1807b499eb3b4975f075ea
+      internalID: 1378319000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_166
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 110
+        width: 74
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65773eda9fcd884991e6f099e42cb88
+      internalID: 326660517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_167
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 110
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74383628bee6d6349a0c2cc906c63ee1
+      internalID: 1360078885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_168
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 110
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c82aa0bc3e78df44be0a5848457917a
+      internalID: 487841872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_169
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 110
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b76aa286981274b9aa44b36f3f62fe
+      internalID: -689226292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_170
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 110
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d052de25aa7e584c994995da9124450
+      internalID: 1405014345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_171
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 110
+        width: 86
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25342f65dcf37748b7a96ad9b8e22d1
+      internalID: -2098214665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_172
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 110
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37c37157191fc24fbc8ded2cc1059d0
+      internalID: 179411606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_173
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 110
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc1de6670077914f8af34c54b3ed238
+      internalID: 2097380361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_174
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 110
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e080fe6c89c29458399bb03377b2d2
+      internalID: 2007360467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_175
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 47
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bd69ff65863fc49991802081807b64
+      internalID: -510076835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_176
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 47
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3944e984bc7f88148875f8a7f6268d73
+      internalID: -1400075045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_177
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 47
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c87cb8baeacb8f4591c072633935c8f
+      internalID: -618475099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_178
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 47
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3166f346da233d4994c4e2bdfe40c97
+      internalID: 588159858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_179
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 47
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9671bd020f6f62f488deac4f2fcbba69
+      internalID: -1620375897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_180
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 47
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378b2ea46a486ae448fdaaf699d2efc4
+      internalID: 959910396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_181
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 47
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f5fedeb73e52b448567915c294c274
+      internalID: 122271338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_182
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 47
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ae6460d73408841b9aa1f892a5ac10
+      internalID: 1935604838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_183
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 47
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a33420ac2b3ece42a3c7a7a22c9d311
+      internalID: 576350573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sonic_sheet_transparent_184
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 47
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30c1bc754489f94c9eaafc79924a006
+      internalID: -1459665393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sonic_sheet_transparent_0: -1269303180
+      sonic_sheet_transparent_1: 525163779
+      sonic_sheet_transparent_10: 1765063083
+      sonic_sheet_transparent_100: 428917883
+      sonic_sheet_transparent_101: -742072748
+      sonic_sheet_transparent_102: -1675708536
+      sonic_sheet_transparent_103: 531791263
+      sonic_sheet_transparent_104: 234378951
+      sonic_sheet_transparent_105: -252356386
+      sonic_sheet_transparent_106: 713366073
+      sonic_sheet_transparent_107: -303116119
+      sonic_sheet_transparent_108: 125690907
+      sonic_sheet_transparent_109: -960705618
+      sonic_sheet_transparent_11: -2127452218
+      sonic_sheet_transparent_110: -1239144745
+      sonic_sheet_transparent_111: -200007148
+      sonic_sheet_transparent_112: -567612579
+      sonic_sheet_transparent_113: 641000714
+      sonic_sheet_transparent_114: -282485948
+      sonic_sheet_transparent_115: -454141878
+      sonic_sheet_transparent_116: 128876685
+      sonic_sheet_transparent_117: -1137356739
+      sonic_sheet_transparent_118: 16727687
+      sonic_sheet_transparent_119: -401250342
+      sonic_sheet_transparent_12: -700597075
+      sonic_sheet_transparent_120: 1005965681
+      sonic_sheet_transparent_121: -697335031
+      sonic_sheet_transparent_122: -777264700
+      sonic_sheet_transparent_123: -851226432
+      sonic_sheet_transparent_124: 663607565
+      sonic_sheet_transparent_125: -623459217
+      sonic_sheet_transparent_126: -565455086
+      sonic_sheet_transparent_127: -891376612
+      sonic_sheet_transparent_128: -201470217
+      sonic_sheet_transparent_129: -932653718
+      sonic_sheet_transparent_13: -1994491754
+      sonic_sheet_transparent_130: 2136512018
+      sonic_sheet_transparent_131: -1920128652
+      sonic_sheet_transparent_132: 412728855
+      sonic_sheet_transparent_133: 1409951144
+      sonic_sheet_transparent_134: 325235332
+      sonic_sheet_transparent_135: 293141785
+      sonic_sheet_transparent_136: 1920557480
+      sonic_sheet_transparent_137: -410985411
+      sonic_sheet_transparent_138: -996856744
+      sonic_sheet_transparent_139: -852445396
+      sonic_sheet_transparent_14: -1194258686
+      sonic_sheet_transparent_140: 491162901
+      sonic_sheet_transparent_141: 1769763931
+      sonic_sheet_transparent_142: 450793956
+      sonic_sheet_transparent_143: -1982540125
+      sonic_sheet_transparent_144: -550852330
+      sonic_sheet_transparent_145: 553306736
+      sonic_sheet_transparent_146: -1339912584
+      sonic_sheet_transparent_147: 1181274324
+      sonic_sheet_transparent_148: 292132155
+      sonic_sheet_transparent_149: 1455507114
+      sonic_sheet_transparent_15: 1500128577
+      sonic_sheet_transparent_150: -2117034898
+      sonic_sheet_transparent_151: -1577150459
+      sonic_sheet_transparent_152: -1367894132
+      sonic_sheet_transparent_153: -561390309
+      sonic_sheet_transparent_154: 1240575886
+      sonic_sheet_transparent_155: 498027287
+      sonic_sheet_transparent_156: -1637486935
+      sonic_sheet_transparent_157: 1058176316
+      sonic_sheet_transparent_158: 537394992
+      sonic_sheet_transparent_159: -453758033
+      sonic_sheet_transparent_16: -612358631
+      sonic_sheet_transparent_160: 240120523
+      sonic_sheet_transparent_161: 375093087
+      sonic_sheet_transparent_162: -1282767575
+      sonic_sheet_transparent_163: 170953943
+      sonic_sheet_transparent_164: -1569446165
+      sonic_sheet_transparent_165: 1378319000
+      sonic_sheet_transparent_166: 326660517
+      sonic_sheet_transparent_167: 1360078885
+      sonic_sheet_transparent_168: 487841872
+      sonic_sheet_transparent_169: -689226292
+      sonic_sheet_transparent_17: -744217871
+      sonic_sheet_transparent_170: 1405014345
+      sonic_sheet_transparent_171: -2098214665
+      sonic_sheet_transparent_172: 179411606
+      sonic_sheet_transparent_173: 2097380361
+      sonic_sheet_transparent_174: 2007360467
+      sonic_sheet_transparent_175: -510076835
+      sonic_sheet_transparent_176: -1400075045
+      sonic_sheet_transparent_177: -618475099
+      sonic_sheet_transparent_178: 588159858
+      sonic_sheet_transparent_179: -1620375897
+      sonic_sheet_transparent_18: 1191578603
+      sonic_sheet_transparent_180: 959910396
+      sonic_sheet_transparent_181: 122271338
+      sonic_sheet_transparent_182: 1935604838
+      sonic_sheet_transparent_183: 576350573
+      sonic_sheet_transparent_184: -1459665393
+      sonic_sheet_transparent_19: -1940894409
+      sonic_sheet_transparent_2: 97027470
+      sonic_sheet_transparent_20: 806402716
+      sonic_sheet_transparent_21: -55853450
+      sonic_sheet_transparent_22: -921418371
+      sonic_sheet_transparent_23: -557721046
+      sonic_sheet_transparent_24: 62817912
+      sonic_sheet_transparent_25: 1930653396
+      sonic_sheet_transparent_26: 1611793158
+      sonic_sheet_transparent_27: 964298459
+      sonic_sheet_transparent_28: 2089980260
+      sonic_sheet_transparent_29: -785099303
+      sonic_sheet_transparent_3: 1960328111
+      sonic_sheet_transparent_30: 1713997016
+      sonic_sheet_transparent_31: -1318037495
+      sonic_sheet_transparent_32: 669087875
+      sonic_sheet_transparent_33: 365588643
+      sonic_sheet_transparent_34: -1572460105
+      sonic_sheet_transparent_35: -773912579
+      sonic_sheet_transparent_36: 418125826
+      sonic_sheet_transparent_37: -1216411244
+      sonic_sheet_transparent_38: 766410931
+      sonic_sheet_transparent_39: -1727202929
+      sonic_sheet_transparent_4: -1976855328
+      sonic_sheet_transparent_40: 556602618
+      sonic_sheet_transparent_41: -1379838954
+      sonic_sheet_transparent_42: 617943169
+      sonic_sheet_transparent_43: 1925275673
+      sonic_sheet_transparent_44: -41315085
+      sonic_sheet_transparent_45: 535068785
+      sonic_sheet_transparent_46: -860625185
+      sonic_sheet_transparent_47: 348158142
+      sonic_sheet_transparent_48: 1498569575
+      sonic_sheet_transparent_49: -977248059
+      sonic_sheet_transparent_5: 848711765
+      sonic_sheet_transparent_50: -1842065751
+      sonic_sheet_transparent_51: -1358665596
+      sonic_sheet_transparent_52: -638752211
+      sonic_sheet_transparent_53: -27502251
+      sonic_sheet_transparent_54: 289938193
+      sonic_sheet_transparent_55: -17409603
+      sonic_sheet_transparent_56: 1595775439
+      sonic_sheet_transparent_57: -94022406
+      sonic_sheet_transparent_58: 1892297668
+      sonic_sheet_transparent_59: 555982458
+      sonic_sheet_transparent_6: -1523579366
+      sonic_sheet_transparent_60: 351157450
+      sonic_sheet_transparent_61: -1310352676
+      sonic_sheet_transparent_62: 470952442
+      sonic_sheet_transparent_63: 1506004323
+      sonic_sheet_transparent_64: 169513751
+      sonic_sheet_transparent_65: 1500452607
+      sonic_sheet_transparent_66: -1265835132
+      sonic_sheet_transparent_67: -1427273019
+      sonic_sheet_transparent_68: -839097575
+      sonic_sheet_transparent_69: 1482792129
+      sonic_sheet_transparent_7: -1579515495
+      sonic_sheet_transparent_70: -1532097886
+      sonic_sheet_transparent_71: -1731532169
+      sonic_sheet_transparent_72: 375321858
+      sonic_sheet_transparent_73: 1142238882
+      sonic_sheet_transparent_74: 1247586147
+      sonic_sheet_transparent_75: 1783037924
+      sonic_sheet_transparent_76: 1576905491
+      sonic_sheet_transparent_77: 1566889387
+      sonic_sheet_transparent_78: -1356453155
+      sonic_sheet_transparent_79: -989650338
+      sonic_sheet_transparent_8: 922620670
+      sonic_sheet_transparent_80: 184768294
+      sonic_sheet_transparent_81: -655201449
+      sonic_sheet_transparent_82: 1845418321
+      sonic_sheet_transparent_83: -2131109777
+      sonic_sheet_transparent_84: -591763843
+      sonic_sheet_transparent_85: 479929159
+      sonic_sheet_transparent_86: -375102325
+      sonic_sheet_transparent_87: 680004178
+      sonic_sheet_transparent_88: -1663014604
+      sonic_sheet_transparent_89: -438013686
+      sonic_sheet_transparent_9: -403820460
+      sonic_sheet_transparent_90: -2140247653
+      sonic_sheet_transparent_91: -1478520308
+      sonic_sheet_transparent_92: 1744073577
+      sonic_sheet_transparent_93: 926061268
+      sonic_sheet_transparent_94: 1994214043
+      sonic_sheet_transparent_95: -881600467
+      sonic_sheet_transparent_96: 2128429856
+      sonic_sheet_transparent_97: 2124803731
+      sonic_sheet_transparent_98: 1951869933
+      sonic_sheet_transparent_99: 234208071
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

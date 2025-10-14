@@ -11300,6 +11300,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 93014610528909129, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
+      propertyPath: baseSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 93014610528909129, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
+      propertyPath: boostSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 93014610528909129, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
       propertyPath: torqueAmount
       value: 0.5
       objectReference: {fileID: 0}
