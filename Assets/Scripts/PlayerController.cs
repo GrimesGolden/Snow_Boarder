@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float baseSpeed = 25f;
     SurfaceEffector2D surfaceEffector2D;
 
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -24,14 +25,13 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         RotatePlayer();
-        ControlSpeed(); 
+        ControlSpeed();
     }
 
     void ControlSpeed()
     {
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-        {
-            Debug.Log("Use the boost to get through.");
+        {   
             surfaceEffector2D.speed = boostSpeed;
         }
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            surfaceEffector2D.speed = baseSpeed;
+            surfaceEffector2D.speed = baseSpeed; 
         }
     }
 
