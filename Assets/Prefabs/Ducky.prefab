@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 93014610528909129}
   - component: {fileID: 6841398215384116026}
   - component: {fileID: 705053600957987876}
+  - component: {fileID: 1908998384116367055}
   m_Layer: 0
   m_Name: Ducky
   m_TagString: Player
@@ -385,6 +386,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snowEffect: {fileID: 3715136215287187429}
+--- !u!114 &1908998384116367055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698544771482252367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09fb4b2e892797146b448e5b432eabef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2739900851703628201
 GameObject:
   m_ObjectHideFlags: 0
