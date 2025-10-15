@@ -23,7 +23,12 @@ public class DustTrail : MonoBehaviour
         // Else stop
         snowEffect.Stop();
         GetComponent<AudioSource>().Stop(); // Also pause accompanying sound effect. 
-         // Note: This plays the standard Ducky slide sound, which is not controlled by the sound manager
-        // It is instead an Audio Source directly attached to the Ducky game object.  
+                                            // Note: This plays the standard Ducky slide sound, which is not controlled by the sound manager
+                                            // It is instead an Audio Source directly attached to the Ducky game object.  
+    }
+    
+    public void StopTrailSound()
+    {
+        GetComponent<AudioSource>().Stop();
     }
 }
