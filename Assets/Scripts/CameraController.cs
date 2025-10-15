@@ -9,6 +9,7 @@ public class CameraController : MonoBehaviour
 
     // A variable representing the camera.
     CinemachineVirtualCamera vcam;
+    //[SerializeField] AudioClip slideSFX; 
 
     // A float to track elapsed time. 
     float t;
@@ -28,7 +29,7 @@ public class CameraController : MonoBehaviour
 
         // A lot of magic numbers here, I know. 
         if (t >= 5)
-        {   
+        {
             // The longer the time in air, the larger the camera will zoom out, for a cool effect. 
             vcam.m_Lens.OrthographicSize = 30f;
         }
@@ -46,10 +47,11 @@ public class CameraController : MonoBehaviour
     {   
         // Zero out the timer, and return to standard camera size. 
         t = 0;
-        vcam.m_Lens.OrthographicSize = standardCam; 
+        vcam.m_Lens.OrthographicSize = standardCam;
+       // GetComponent<AudioSource>().PlayOneShot(slideSFX);  
     }
 
-   // void OnCollisionExit2D(Collision2D other)
+   //void OnCollisionExit2D(Collision2D other)
    // {
     //}
 }
