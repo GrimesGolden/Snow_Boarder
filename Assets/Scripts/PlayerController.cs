@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float baseSpeed = 25f;
     SurfaceEffector2D surfaceEffector2D;
 
+    bool canMove = true; 
+
 
     void Start()
     {
@@ -23,9 +25,21 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update()
+    {   
+        if(canMove)
+        {
+            RotatePlayer();
+            ControlSpeed();
+        }
+        else
+        {
+            // controls locked. 
+        }
+    }
+
+    public void DisableControls()
     {
-        RotatePlayer();
-        ControlSpeed();
+        canMove = false; 
     }
 
     void ControlSpeed()

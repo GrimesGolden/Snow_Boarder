@@ -12,6 +12,7 @@ public class CrashDetector : MonoBehaviour
         {
             SoundManager.PlaySound(SoundType.CRASH); // Use the sound manager to play appropriate sound. 
             crashEffect.Play();
+            GetComponent<PlayerController>().DisableControls(); 
             Invoke("ReloadScene", loadDelay); 
         }
     }
