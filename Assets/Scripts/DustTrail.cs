@@ -9,15 +9,21 @@ public class DustTrail : MonoBehaviour
 
 
     void OnCollisionEnter2D(Collision2D other)
-    {
+    {   
+        // If Ducky makes contact with the terrain, play the trail effect. 
         if (other.gameObject.tag == "Terrain")
         {
             snowEffect.Play();
+             GetComponent<AudioSource>().Play(); // An accompanying sound effect. 
         }
     }
 
     void OnCollisionExit2D(Collision2D other)
     {
-        snowEffect.Stop();   
+        // Else stop
+        snowEffect.Stop();
+        GetComponent<AudioSource>().Stop(); // Also pause accompanying sound effect. 
+         // Note: This plays the standard Ducky slide sound, which is not controlled by the sound manager
+        // It is instead an Audio Source directly attached to the Ducky game object.  
     }
 }

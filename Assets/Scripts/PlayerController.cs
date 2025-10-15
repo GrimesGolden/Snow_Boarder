@@ -7,15 +7,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2d;
-    [SerializeField] float torqueAmount = 1f;
-    [SerializeField] float boostSpeed = 450f;
+    [SerializeField] float torqueAmount = 1f; // 1f is a good standard. 
+    [SerializeField] float boostSpeed = 450f; // 50 is a good standard.  
 
-    [SerializeField] float brakeSpeed = 5f; 
-    [SerializeField] float baseSpeed = 25f;
-    SurfaceEffector2D surfaceEffector2D;
+    [SerializeField] float brakeSpeed = 5f; // 5 is a good standard. 
+    [SerializeField] float baseSpeed = 25f; // 10-25 is a good standard.
+    SurfaceEffector2D surfaceEffector2D; 
 
     bool canMove = true; 
-
 
     void Start()
     {
@@ -26,19 +25,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {   
+        //Lock the controls. 
         if(canMove)
         {
             RotatePlayer();
             ControlSpeed();
         }
-        else
-        {
-            // controls locked. 
-        }
     }
 
     public void DisableControls()
-    {
+    {   
+        // This is why public methods are useful. We need to tell this script to stop working from another script
+        // i.e stop the control script FROM a crash detection script. 
         canMove = false; 
     }
 

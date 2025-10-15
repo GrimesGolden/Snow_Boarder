@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Follow : MonoBehaviour
-{
+{   
+
+    // UNUSED CURRENTLY< MIGHT DELETE
     public Transform target;      // The sprite to follow
     public float speed = 5f;      // Follow speed
     public bool smooth = true;    // Whether to move smoothly
