@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
-public class CameraController : MonoBehaviour
+public class AirTime : MonoBehaviour
 {
 
-    // A script to handle the cameras zoom effect. 
+    // A script to handle the cameras zoom effect, zooming out when in the air for a long time.  
 
        CinemachineVirtualCamera vcam;
     //[SerializeField] AudioClip slideSFX; 
@@ -72,6 +72,11 @@ public class CameraController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        ResetAirTime(); 
+    }
+
+    public void ResetAirTime()
+    {   
         // Zero out the timer, and return to standard camera size. 
         t = 0;
         // Reset boolean triggers (these prevent looping sound)
@@ -79,5 +84,6 @@ public class CameraController : MonoBehaviour
         isMediumAir = false;
         // Return to the normal camera upon landing. 
         vcam.m_Lens.OrthographicSize = standardCam;
+
     }
 }

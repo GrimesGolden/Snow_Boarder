@@ -18,8 +18,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
-        surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>();
+        rb2d = GetComponent<Rigidbody2D>(); // Used for torque control
+        surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>(); // Used for speed control. 
         surfaceEffector2D.speed = baseSpeed;
     }
 
@@ -49,6 +49,9 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             surfaceEffector2D.speed = brakeSpeed;
+            // Access the public reset method of camera controller and reset it here.
+            // This prevents slide time during braking, behaving as air time. 
+            GetComponent<AirTime>().ResetAirTime(); 
         }
         else
         {
