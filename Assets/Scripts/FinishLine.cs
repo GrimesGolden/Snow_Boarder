@@ -9,7 +9,7 @@ public class FinishLine : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            GetComponent<AudioSource>().Play(); 
+            SoundManager.PlaySound(SoundType.FINISH);  
             finishEffect.Play(); 
             Invoke("ReloadScene", loadDelay);
         }

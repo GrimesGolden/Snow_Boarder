@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 705053600957987876}
   - component: {fileID: 1908998384116367055}
   - component: {fileID: 3808569567906006871}
-  - component: {fileID: 8626671218608850958}
+  - component: {fileID: 4557224269373440057}
   m_Layer: 0
   m_Name: Ducky
   m_TagString: Player
@@ -375,7 +375,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadDelay: 1
   crashEffect: {fileID: 2606490938111859892}
-  crashSFX: {fileID: 8300000, guid: a2a075bb55765db46a09e7a7271a00c0, type: 3}
 --- !u!114 &705053600957987876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,7 +496,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &8626671218608850958
+--- !u!82 &4557224269373440057
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -507,9 +506,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0c974c5357dcd6d44ba4a684149d3334, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 47d2a93f90eb775468dc9e7dc849a298, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -18,6 +18,6 @@ public class DustTrail : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D other)
     {
-        snowEffect.Stop();
+        snowEffect.Stop();   
     }
 }
