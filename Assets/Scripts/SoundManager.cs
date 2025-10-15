@@ -35,7 +35,12 @@ public class SoundManager : MonoBehaviour
     {
         AudioClip[] clips = instance.soundList[(int)sound].Sounds;
         AudioClip randomClip = clips[UnityEngine.Random.Range(0, clips.Length)];
-        instance.audioSource.PlayOneShot(randomClip, volume); 
+        instance.audioSource.PlayOneShot(randomClip, volume);
+    }
+    
+    public static void StopSound()
+    {
+        instance.audioSource.Stop(); 
     }
 
 #if UNITY_EDITOR
