@@ -28,6 +28,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         pauseMenuUI.SetActive(false);
+        SoundManager.StopSound();
     }
 
     void StopGame()
@@ -35,6 +36,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 0f;
         SoundManager.StopSound();
         GetComponent<DustTrail>().StopTrailSound(); 
+        SoundManager.PlaySound(SoundType.PAUSE); 
         GameIsPaused = true;
         pauseMenuUI.SetActive(true); 
     }

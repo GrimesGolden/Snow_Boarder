@@ -513,6 +513,9 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 49c2c6f0ed7589d4ea462155f8c2f7c3, type: 3}
     - {fileID: 8300000, guid: 867426f22d9433e40992e61aeb9f7b61, type: 3}
     - {fileID: 8300000, guid: cc6b4ebadc61db946bd98fbf7efedf1f, type: 3}
+  - name: PAUSE
+    sounds:
+    - {fileID: 8300000, guid: 87f01f361acb28f40b8427bb5a67a29d, type: 3}
 --- !u!82 &104201383
 AudioSource:
   m_ObjectHideFlags: 0

@@ -14,7 +14,8 @@ public enum SoundType
     SLIDE,
 
     AIR,
-    FINISH
+    FINISH,
+    PAUSE
 }
 
 // The audio sources will be renamed in edit mode. 
