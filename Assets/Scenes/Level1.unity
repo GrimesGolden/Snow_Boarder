@@ -490,10 +490,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundList:
-  - {fileID: 8300000, guid: a2a075bb55765db46a09e7a7271a00c0, type: 3}
-  - {fileID: 8300000, guid: 47d2a93f90eb775468dc9e7dc849a298, type: 3}
-  - {fileID: 8300000, guid: 85cd6859e57ed3c478b290664efc903e, type: 3}
-  - {fileID: 8300000, guid: 110ef49571df9a04da38b12b30d12e7d, type: 3}
+  - name: CRASH
+    sounds:
+    - {fileID: 8300000, guid: a2a075bb55765db46a09e7a7271a00c0, type: 3}
+    - {fileID: 8300000, guid: 228b2e6a9aebf2343b3a98c23ca95036, type: 3}
+    - {fileID: 8300000, guid: d8138e3c3eb5dcd4a83c2c68471097f2, type: 3}
+    - {fileID: 8300000, guid: 0a0a7b37c76a26c4e8e2029527bbc832, type: 3}
+    - {fileID: 8300000, guid: 66f47de78beaefd468edcd8e5f9717db, type: 3}
+    - {fileID: 8300000, guid: d7ee7d4d687cf474e9c82206e643ed45, type: 3}
+    - {fileID: 8300000, guid: c36506873df4de940b192bb7f24db32a, type: 3}
+    - {fileID: 8300000, guid: fb95d50741dbaee4792cf5f4c889425a, type: 3}
+  - name: SLIDE
+    sounds:
+    - {fileID: 8300000, guid: 47d2a93f90eb775468dc9e7dc849a298, type: 3}
+  - name: AIR
+    sounds:
+    - {fileID: 8300000, guid: 85cd6859e57ed3c478b290664efc903e, type: 3}
+  - name: FINISH
+    sounds:
+    - {fileID: 8300000, guid: 110ef49571df9a04da38b12b30d12e7d, type: 3}
+    - {fileID: 8300000, guid: 49c2c6f0ed7589d4ea462155f8c2f7c3, type: 3}
+    - {fileID: 8300000, guid: 867426f22d9433e40992e61aeb9f7b61, type: 3}
+    - {fileID: 8300000, guid: cc6b4ebadc61db946bd98fbf7efedf1f, type: 3}
 --- !u!82 &104201383
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8549,7 +8567,6 @@ GameObject:
   - component: {fileID: 1453220728}
   - component: {fileID: 1453220727}
   - component: {fileID: 1453220726}
-  - component: {fileID: 1453220729}
   m_Layer: 0
   m_Name: Finish Line
   m_TagString: Untagged
@@ -8634,102 +8651,6 @@ Transform:
   - {fileID: 1531717585}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1453220729
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453220725}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 110ef49571df9a04da38b12b30d12e7d, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.5
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1460735620
 GameObject:
   m_ObjectHideFlags: 0
