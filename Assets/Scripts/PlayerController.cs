@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float brakeSpeed = 5f; // 5 is a good standard. 
     [SerializeField] float baseSpeed = 25f; // 10-25 is a good standard.
+
+    [SerializeField] Animator animator; 
     SurfaceEffector2D surfaceEffector2D; 
 
     bool canMove = true; 
@@ -45,10 +47,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             surfaceEffector2D.speed = boostSpeed;
+            animator.SetFloat("Speed", boostSpeed); 
         }
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             surfaceEffector2D.speed = brakeSpeed;
+            animator.SetFloat("Speed", brakeSpeed);
             // Access the public reset method of camera controller and reset it here.
             // This prevents slide time during braking, behaving as air time. 
             GetComponent<AirTime>().ResetAirTime(); 
@@ -56,6 +60,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             surfaceEffector2D.speed = baseSpeed; 
+            animator.SetFloat("Speed", baseSpeed);
         }
     }
 

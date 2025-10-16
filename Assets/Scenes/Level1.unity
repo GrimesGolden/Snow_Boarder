@@ -507,6 +507,8 @@ MonoBehaviour:
     sounds:
     - {fileID: 8300000, guid: 841f7fcac5990eb49b91b23c29b3537c, type: 3}
     - {fileID: 8300000, guid: 1799499862e6c824f8271063e4d654ba, type: 3}
+    - {fileID: 8300000, guid: f13f2de35cb3c004b9ca2c66fc1a03ce, type: 3}
+    - {fileID: 8300000, guid: b051b5d25803dfa44b5636a36a60b165, type: 3}
   - name: FINISH
     sounds:
     - {fileID: 8300000, guid: 110ef49571df9a04da38b12b30d12e7d, type: 3}
@@ -9050,6 +9052,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2282303636762946947, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
   m_PrefabInstance: {fileID: 684456450781873760}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1471941030 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7408291668838740006, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
+  m_PrefabInstance: {fileID: 684456450781873760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1488830086
 GameObject:
   m_ObjectHideFlags: 0
@@ -11791,6 +11798,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 93014610528909129, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1471941030}
     - target: {fileID: 1698544771482252367, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
       propertyPath: m_Name
       value: Ducky
