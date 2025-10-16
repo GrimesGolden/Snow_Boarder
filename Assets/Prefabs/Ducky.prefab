@@ -361,6 +361,7 @@ MonoBehaviour:
   boostSpeed: 50
   brakeSpeed: 5
   baseSpeed: 15
+  animator: {fileID: 7408291668838740006}
 --- !u!114 &6841398215384116026
 MonoBehaviour:
   m_ObjectHideFlags: 0

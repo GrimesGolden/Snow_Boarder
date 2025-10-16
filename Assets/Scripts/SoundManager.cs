@@ -15,7 +15,8 @@ public enum SoundType
 
     AIR,
     FINISH,
-    PAUSE
+    PAUSE,
+    APPLE
 }
 
 // The audio sources will be renamed in edit mode. 
