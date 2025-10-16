@@ -467,22 +467,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 541718797038738733, guid: 704b3af8313a365439a2108791b0fc15, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 541718797038738733, guid: 704b3af8313a365439a2108791b0fc15, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.009020967
-      objectReference: {fileID: 0}
-    - target: {fileID: 541718797038738733, guid: 704b3af8313a365439a2108791b0fc15, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.009020967
-      objectReference: {fileID: 0}
-    - target: {fileID: 541718797038738733, guid: 704b3af8313a365439a2108791b0fc15, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.6830188
-      objectReference: {fileID: 0}
     - target: {fileID: 1471611907003839478, guid: 704b3af8313a365439a2108791b0fc15, type: 3}
       propertyPath: m_Name
       value: ApplePickup
@@ -527,10 +511,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -20.849
       objectReference: {fileID: 0}
-    - target: {fileID: 7455199463811088401, guid: 704b3af8313a365439a2108791b0fc15, type: 3}
-      propertyPath: appleEffect
-      value: 
-      objectReference: {fileID: 792152909}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7090,11 +7070,6 @@ Transform:
   - {fileID: 431553337}
   m_Father: {fileID: 231894665}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!198 &792152909 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 541718797038738733, guid: 704b3af8313a365439a2108791b0fc15, type: 3}
-  m_PrefabInstance: {fileID: 94239165}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &825580896
 GameObject:
   m_ObjectHideFlags: 0
