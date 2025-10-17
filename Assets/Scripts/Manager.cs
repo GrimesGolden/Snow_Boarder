@@ -28,6 +28,12 @@ public class Manager : MonoBehaviour
         Health = MaxHealth;
     }
 
+    public void DestroyMe()
+    {
+        Destroy(Manager.I.gameObject);
+        Manager.I = null;
+    }
+
     public void TakeDamage()
     {
         Health--;
@@ -44,7 +50,7 @@ public class Manager : MonoBehaviour
             SceneManager.LoadScene(0);
         }
         else
-        {
+        {   
             SceneManager.LoadScene(1);
         }
     }

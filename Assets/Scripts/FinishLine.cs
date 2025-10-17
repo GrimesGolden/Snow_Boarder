@@ -1,3 +1,4 @@
+using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -24,7 +25,10 @@ public class FinishLine : MonoBehaviour
     }
 
     void ReloadScene()
-    {
+    {   
+        GameObject gameManager = GameObject.Find("GameManager"); // Find and activate script. 
+        Manager manager = gameManager.GetComponent<Manager>();
+        manager.DestroyMe(); // This needs refactor. 
         SceneManager.LoadScene(0);
     }
 }
