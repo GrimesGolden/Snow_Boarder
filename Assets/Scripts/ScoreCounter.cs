@@ -7,7 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class ScoreCounter : MonoBehaviour
 {
     private TextMeshProUGUI uiText;
-    public int score = 0; 
+    public int score = 0;
     void Start()
     {
         uiText = GetComponent<TextMeshProUGUI>();
