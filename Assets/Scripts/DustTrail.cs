@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class DustTrail : MonoBehaviour
-{   
+{
     [SerializeField] ParticleSystem snowEffect;
 
 
@@ -14,7 +14,7 @@ public class DustTrail : MonoBehaviour
         if (other.gameObject.tag == "Terrain")
         {
             snowEffect.Play();
-             GetComponent<AudioSource>().Play(); // An accompanying sound effect. 
+            GetComponent<AudioSource>().Play(); // An accompanying sound effect. 
         }
     }
 

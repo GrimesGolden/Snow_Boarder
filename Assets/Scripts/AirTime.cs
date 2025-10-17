@@ -13,7 +13,7 @@ public class AirTime : MonoBehaviour
 
     float standardCam = 10f;
     bool isLongAir = false;
-    bool isMediumAir = false;  
+    //bool isMediumAir = false;  
      void Start()
     {
         // Upon script start, find the virtual camera, and zero out the timer. 
@@ -31,11 +31,11 @@ public class AirTime : MonoBehaviour
         // Some constants for camera values and timing. 
         const int long_air = 5;
         const int medium_air = 3;
-        const int short_air = 2;
+       // const int short_air = 2;
 
         const float long_cam = 30f;
         const float medium_cam = 20f;
-        const float short_cam = 15f;  
+        //const float short_cam = 15f;  
 
         // Continuously update time (it only resets upon a collision)
         // Essentially we are tracking how long "ducky" is in the air.
@@ -58,16 +58,16 @@ public class AirTime : MonoBehaviour
         {
             vcam.m_Lens.OrthographicSize = medium_cam;
 
-            if(!isMediumAir)
-            {
-                SoundManager.PlaySound(SoundType.AIR);
-                isMediumAir = true; 
-            }
+           // if(!isMediumAir)
+          //  {
+             // /  SoundManager.PlaySound(SoundType.AIR);
+             //   isMediumAir = true; 
+          //  }
         }
-        else if (t >= short_air)
-        {
-            vcam.m_Lens.OrthographicSize = short_cam;
-        }
+       // else if (t >= short_air)
+        //{
+       //     vcam.m_Lens.OrthographicSize = short_cam;
+       // }
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -81,7 +81,7 @@ public class AirTime : MonoBehaviour
         t = 0;
         // Reset boolean triggers (these prevent looping sound)
         isLongAir = false;
-        isMediumAir = false;
+        //isMediumAir = false;
         // Return to the normal camera upon landing. 
         vcam.m_Lens.OrthographicSize = standardCam;
 

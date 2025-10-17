@@ -7,6 +7,8 @@ using UnityEngine.SocialPlatforms.Impl;
 public class AppleController : MonoBehaviour
 {
     [SerializeField] ParticleSystem appleEffect;
+
+    [SerializeField] Animator animator;
     ScoreCounter scoreCounter;
     float appleDelay = 0.5f; // This works, even if 0.5f is a bit too long. 
     bool appleHit = false; 
@@ -25,8 +27,9 @@ public class AppleController : MonoBehaviour
             SoundManager.StopSound(); 
             SoundManager.PlaySound(SoundType.APPLE);
             appleEffect.Play();
-            scoreCounter.score += 1;
+            scoreCounter.score += 1; // MAGIC
             appleHit = true; 
+            animator.SetBool("collect", true); 
             Invoke("DestroyApple", appleDelay); 
       
         }
