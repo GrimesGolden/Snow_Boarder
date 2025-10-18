@@ -794,6 +794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 157421941}
   - component: {fileID: 157421942}
+  - component: {fileID: 157421943}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -830,6 +831,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 0
   hearts: []
+--- !u!114 &157421943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157421939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f18c9a49ed7cd72428a6c0a0d4c1d909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 0.2
+  boostSpeed: 25
+  brakeSpeed: 5
+  baseSpeed: 10
 --- !u!1 &157962987
 GameObject:
   m_ObjectHideFlags: 0
@@ -7691,17 +7708,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 93014610528909129, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: baseSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 93014610528909129, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: boostSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 93014610528909129, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: brakeSpeed
-      value: 1
+    - target: {fileID: 1134684487179107206, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
+      propertyPath: m_AngularDrag
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1698544771482252367, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
       propertyPath: m_Name

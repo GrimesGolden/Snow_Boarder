@@ -8,13 +8,15 @@ public class AppleController : MonoBehaviour
 {   
     // Controlling script for the apple pickup which updates score. 
     // CoffeeController is essentially the same with small differences associated with boost value. See CoffeeController.cs
+
+    DataManager dataManager; 
     [SerializeField] ParticleSystem appleEffect; // The associated particle effect
 
     [SerializeField] Animator animator; // The associated sprite animation
 
-    [SerializeField] int AppleValue = 1; // How many scoring points an apple is worth
+    int appleValue; // How many scoring points an apple is worth
     ScoreCounter scoreCounter;
-    [SerializeField] float appleDelay = 0.5f; // How long a pickup should hold before destruction after pickup
+    float appleDelay; // How long a pickup should hold before destruction after pickup
     bool appleHit = false; 
 
     void Start()
@@ -24,6 +26,8 @@ public class AppleController : MonoBehaviour
 
         // Get the ScoreCounter (Script) component out of scoreGO
         scoreCounter = scoreTxt.GetComponent<ScoreCounter>();
+
+        LoadData(); 
     }
     void OnTriggerEnter2D(Collider2D other)
     {   
@@ -43,13 +47,22 @@ public class AppleController : MonoBehaviour
         SoundManager.StopSound();
         SoundManager.PlaySound(SoundType.APPLE);
     }
-    
+
     void UpdateValues()
     {
         appleEffect.Play();
-        scoreCounter.score += AppleValue; 
+        scoreCounter.score += appleValue;
         appleHit = true; // This prevents double triggers for pickups. 
         animator.SetBool("collect", true); // See the animator controller, this triggers the associated state transition. 
+    }
+    
+    void LoadData()
+    {
+        GameObject gameManager = GameObject.Find("GameManager");
+        dataManager = gameManager.GetComponentInChildren<DataManager>();
+
+        appleValue = dataManager.GetAppleVal();
+        appleDelay = dataManager.GetAppleDelay(); 
     }
     
     void DestroyApple()

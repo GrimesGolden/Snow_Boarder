@@ -5189,10 +5189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b0d1f17456f433abb67084505f7b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torqueAmount: 0.5
-  boostSpeed: 55
-  brakeSpeed: 5
-  baseSpeed: 15
   animator: {fileID: 7408291668838740006}
 --- !u!114 &6841398215384116026
 MonoBehaviour:

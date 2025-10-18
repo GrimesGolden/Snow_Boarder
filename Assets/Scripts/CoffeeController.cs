@@ -4,12 +4,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class CoffeeController : MonoBehaviour
-{
+{   
+    DataManager dataManager; 
     [SerializeField] ParticleSystem boostEffect;
     [SerializeField] Animator animator;
 
-    [SerializeField] int boostAmount = 25;
-    [SerializeField] float coffeeDelay = 0.5f;
+    int boostAmount;
+    float coffeeDelay;
 
      BoostCounter boostCounter; 
     bool coffeeHit = false; 
@@ -19,7 +20,9 @@ public class CoffeeController : MonoBehaviour
         GameObject boostManager = GameObject.Find("BoostManager");
 
         // Get the boostCounter (Script) component out of BoostManager
-        boostCounter = boostManager.GetComponent<BoostCounter>(); 
+        boostCounter = boostManager.GetComponent<BoostCounter>();
+
+        LoadData(); 
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -38,7 +41,7 @@ public class CoffeeController : MonoBehaviour
         SoundManager.StopSound();
         SoundManager.PlaySound(SoundType.COFFEE);
     }
-    
+
     void UpdateValues()
     {
         boostEffect.Play();
@@ -47,6 +50,16 @@ public class CoffeeController : MonoBehaviour
         coffeeHit = true;
         animator.SetBool("collect", true);
     }
+    
+    void LoadData()
+    {
+        GameObject gameManager = GameObject.Find("GameManager");
+        dataManager = gameManager.GetComponentInChildren<DataManager>();
+
+        boostAmount = dataManager.GetCoffeeVal();
+        coffeeDelay = dataManager.GetCoffeeDelay(); 
+    }
+    
     
     void DestroyCoffee()
     {

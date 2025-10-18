@@ -7,11 +7,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2d;
-    [SerializeField] float torqueAmount = 1f; // 1f is a good standard. 
-    [SerializeField] float boostSpeed = 450f; // 50 is a good standard.  
 
-    [SerializeField] float brakeSpeed = 5f; // 5 is a good standard. 
-    [SerializeField] float baseSpeed = 25f; // 10-25 is a good standard.
+    DataManager dataManager; 
+    float torqueAmount; // 1f is a good standard. 
+    float boostSpeed; // 50 is a good standard.  
+
+    float brakeSpeed; // 5 is a good standard. 
+    float baseSpeed; // 10-25 is a good standard.
 
     [SerializeField] Animator animator; 
     SurfaceEffector2D surfaceEffector2D; 
@@ -21,18 +23,32 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>(); // Used for torque control
+        LoadData(); 
+        
         surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>(); // Used for speed control. 
         surfaceEffector2D.speed = baseSpeed;
     }
 
     void Update()
-    {   
+    {
         //Lock the controls. 
-        if(canMove)
+        if (canMove)
         {
             RotatePlayer();
             ControlSpeed();
         }
+    }
+    
+    void LoadData()
+    {
+        GameObject gameManager = GameObject.Find("GameManager");
+        dataManager = gameManager.GetComponentInChildren<DataManager>();
+
+        torqueAmount = dataManager.GetTorqueVal(); // 1f is a good standard. 
+        boostSpeed = dataManager.GetBoostSpeed(); // 50 is a good standard.  
+
+        brakeSpeed = dataManager.GetBrakeSpeed(); // 5 is a good standard. 
+        baseSpeed = dataManager.GetBaseSpeed(); // 10-25 is a good standard.
     }
 
     public void DisableControls()
