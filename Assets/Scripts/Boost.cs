@@ -10,9 +10,9 @@ public class Boost : MonoBehaviour
 
     DataManager dataManager;
     int boostRemaining;
-    [SerializeField] ParticleSystem boostEffect;
+    [SerializeField] ParticleSystem boostEffect; // This needs to be serialized because there are many possible boost effects.
 
-    [SerializeField] Animator animator; 
+    Animator animator; 
     float boostDelay;
     float t = 1; // It doesn't matter what number we initialize, so long as it's >= 1. 
     BoostCounter boostCounter; 
@@ -34,11 +34,11 @@ public class Boost : MonoBehaviour
         GameObject boostManager = GameObject.Find("BoostManager");
         // Load values from DataManager script into prefab values. 
         GameObject gameManager = GameObject.Find("GameManager");
-
         // Get the BoostCounter.cs script out of BoostManager
         boostCounter = boostManager.GetComponent<BoostCounter>();
         boostRemaining = boostCounter.GetBoostCount();
         dataManager = gameManager.GetComponentInChildren<DataManager>();
+        animator = GetComponentInChildren<Animator>(); 
         boostDelay = dataManager.GetBoostDelay(); 
     }
 

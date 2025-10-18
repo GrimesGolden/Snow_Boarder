@@ -102,7 +102,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boostEffect: {fileID: 1998081730959726353}
   animator: {fileID: 6145532229868806324}
-  boostAmount: 10
 --- !u!61 &959491153548240262
 BoxCollider2D:
   m_ObjectHideFlags: 0

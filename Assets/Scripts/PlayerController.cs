@@ -8,25 +8,24 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2d;
 
-    DataManager dataManager; 
-    float torqueAmount; // 0.5f is a good standard. 
-    float boostSpeed; // 25-50 is a good standard.  
+    DataManager dataManager;
 
-    float brakeSpeed; // 5 is a good standard. 
-    float baseSpeed; // 10-25 is a good standard.
+    Boost boostScript; 
+    // Values to be loaded from data manager
+    float torqueAmount;  
+    float boostSpeed; 
 
-    [SerializeField] Animator animator; 
+    float brakeSpeed;  
+    float baseSpeed; 
+
+    Animator animator; 
     SurfaceEffector2D surfaceEffector2D; 
 
     bool canMove = true; 
 
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>(); // Used for torque control
-
         LoadData(); // Load from DataManager
-        
-        surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>(); // Used for speed control. 
         surfaceEffector2D.speed = baseSpeed; // Standard speed activates. 
     }
 
@@ -42,14 +41,19 @@ public class PlayerController : MonoBehaviour
     
     void LoadData()
     {
-        GameObject gameManager = GameObject.Find("GameManager");
-        dataManager = gameManager.GetComponentInChildren<DataManager>();
+        boostScript = GetComponent<Boost>(); // Used for Boost gameplay scripting. 
+        rb2d = GetComponent<Rigidbody2D>(); // Used for torque control
+        surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>(); // Used for speed control.
+        GameObject gameManager = GameObject.Find("GameManager"); // Used to access dataManager
+        dataManager = gameManager.GetComponentInChildren<DataManager>(); // Used to load data. 
 
         torqueAmount = dataManager.GetTorqueVal(); // 1f is a good standard. 
         boostSpeed = dataManager.GetBoostSpeed(); // 50 is a good standard.  
 
         brakeSpeed = dataManager.GetBrakeSpeed(); // 5 is a good standard. 
         baseSpeed = dataManager.GetBaseSpeed(); // 10-25 is a good standard.
+
+        animator = GetComponentInChildren<Animator>(); // Used for sprite aninations. 
     }
 
     public void DisableControls()
@@ -64,7 +68,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             // Activate boost effects. 
-            GetComponent<Boost>().HandleBoost(surfaceEffector2D, boostSpeed, baseSpeed); 
+            boostScript.HandleBoost(surfaceEffector2D, boostSpeed, baseSpeed); 
         }
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {   
