@@ -10,7 +10,7 @@ public class CrashDetector : MonoBehaviour
     bool isCrash = false; 
     
     GameObject gameManager;
-    LevelManager manager;
+    LevelManager levelManager;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -20,17 +20,14 @@ public class CrashDetector : MonoBehaviour
             crashEffect.Play();
             GetComponent<PlayerController>().DisableControls();
             isCrash = true;
-            //gameManager = GameObject.Find("GameManager"); // Find and activate script. 
-            //manager = gameManager.GetComponent<Manager>(); 
-            //manager.TakeDamage();
-            Invoke("ReloadScene", loadDelay);
+            Invoke("UpdateLevel", loadDelay);
         }
     }
 
-    void ReloadScene()
+    void UpdateLevel()
     {
         gameManager = GameObject.Find("GameManager"); // Find and activate script. 
-        manager = gameManager.GetComponent<LevelManager>(); 
-        manager.TakeDamage();
+        levelManager = gameManager.GetComponent<LevelManager>(); 
+        levelManager.TakeDamage();
     }
 }

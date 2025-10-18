@@ -19,7 +19,13 @@ public class HealthManager : MonoBehaviour
         gameManager = GameObject.Find("GameManager");
         manager = gameManager.GetComponent<LevelManager>();
 
-        for (int i = (hearts.Length); i > manager.Health; --i)
+        health = manager.Health; 
+        RefreshHearts(); 
+    }
+
+    void RefreshHearts()
+    {
+        for (int i = (hearts.Length); i > health; --i)
         {
             hearts[i - 1].gameObject.SetActive(false);
         }

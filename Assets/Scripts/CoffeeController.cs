@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CoffeeController : MonoBehaviour
@@ -24,15 +25,26 @@ public class CoffeeController : MonoBehaviour
     {
         if (other.tag == "Player" && !coffeeHit)
         {
-            SoundManager.StopSound();
-            SoundManager.PlaySound(SoundType.COFFEE);
-            boostEffect.Play();
-            boostCounter.boostVal += boostAmount; 
-            coffeeHit = true;
-            animator.SetBool("collect", true);
+            BoostSounds();
+            UpdateValues(); 
             Invoke("DestroyCoffee", coffeeDelay);
 
         }
+    }
+
+    void BoostSounds()
+    {
+        SoundManager.StopSound();
+        SoundManager.PlaySound(SoundType.COFFEE);
+    }
+    
+    void UpdateValues()
+    {
+        boostEffect.Play();
+        boostCounter.boostVal += boostAmount;
+
+        coffeeHit = true;
+        animator.SetBool("collect", true);
     }
     
     void DestroyCoffee()
