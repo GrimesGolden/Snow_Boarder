@@ -27,7 +27,7 @@ public class FinishLine : MonoBehaviour
     void ReloadScene()
     {   
         GameObject gameManager = GameObject.Find("GameManager"); // Find and activate script. 
-        Manager manager = gameManager.GetComponent<Manager>();
+        LevelManager manager = gameManager.GetComponent<LevelManager>();
         manager.DestroyMe(); // This needs refactor. 
         SceneManager.LoadScene(0);
     }

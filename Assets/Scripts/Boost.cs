@@ -35,12 +35,6 @@ public class Boost : MonoBehaviour
         {   
             // This prevents eccessive spamming of the sound. 
             t = 0;
-            //SoundManager.PlaySound(SoundType.ERROR);
-            Debug.Log(t);
-        }
-        else
-        {
-            // Didn't trigger because t is too short. 
         }
     }
 }

@@ -4,19 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Manager : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
-    public static Manager I { get; private set; }
+    public static LevelManager I { get; private set; }
 
-    public int MaxHealth = 3;
+    const int MaxHealth = 3;
     public int Health;
 
-   // public Image[] hearts;
-
-    public void Start()
-    {
-      //
-    }
+    public Image[] hearts;
 
     void Awake()
     {
@@ -30,27 +25,26 @@ public class Manager : MonoBehaviour
 
     public void DestroyMe()
     {
-        Destroy(Manager.I.gameObject);
-        Manager.I = null;
+        Destroy(LevelManager.I.gameObject);
+        LevelManager.I = null;
     }
 
     public void TakeDamage()
     {
         Health--;
-        RefreshHearts();
+        ReloadScene();
     }
-
-    public void RefreshHearts()
-    {  
+    public void ReloadScene()
+    {
         if (Health <= 0)
-        {   
+        {
             // Explicitely destroy. 
-            Destroy(Manager.I.gameObject);
-            Manager.I = null;
+            Destroy(LevelManager.I.gameObject);
+            LevelManager.I = null;
             SceneManager.LoadScene(0);
         }
         else
-        {   
+        {
             SceneManager.LoadScene(1);
         }
     }
