@@ -6,6 +6,8 @@ public class CoffeeController : MonoBehaviour
 {
     [SerializeField] ParticleSystem boostEffect;
     [SerializeField] Animator animator;
+
+    [SerializeField] int boostAmount = 25; 
     BoostCounter boostCounter;
     float coffeeDelay = 0.5f;
     bool coffeeHit = false; 
@@ -25,7 +27,7 @@ public class CoffeeController : MonoBehaviour
             SoundManager.StopSound();
             SoundManager.PlaySound(SoundType.COFFEE);
             boostEffect.Play();
-            boostCounter.boostVal += 500; // MAGIC
+            boostCounter.boostVal += boostAmount; 
             coffeeHit = true;
             animator.SetBool("collect", true);
             Invoke("DestroyCoffee", coffeeDelay);

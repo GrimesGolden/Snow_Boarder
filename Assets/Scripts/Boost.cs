@@ -6,6 +6,7 @@ public class Boost : MonoBehaviour
 {
     BoostCounter boostCounter;
     [SerializeField] ParticleSystem boostEffect;
+    [SerializeField] float boostDelay = 0.2f; 
     float t;
     void Start()
     {
@@ -25,15 +26,19 @@ public class Boost : MonoBehaviour
 
     public void HandleBoost( SurfaceEffector2D player, float speed)
     {
-        if (boostCounter.boostVal > 0) // This doesn't need to be a public val like this, but it works. Score counter does the same thing.
+        //if (boostCounter.boostVal > 0) // This doesn't need to be a public val like this, but it works. Score counter does the same thing.
+      //  {
+            // --boostCounter.boostVal;
+            // player.speed = speed;
+            //  boostEffect.Play(); 
+            //t = 0; 
+      //  }
+        if (t >= boostDelay && boostCounter.boostVal > 0)
         {
             --boostCounter.boostVal;
             player.speed = speed;
-            boostEffect.Play(); 
-        }
-        else if (t >= 1)
-        {   
-            // This prevents eccessive spamming of the sound. 
+            boostEffect.Play();
+            // This prevents eccessive spamming of the boost. 
             t = 0;
         }
     }
