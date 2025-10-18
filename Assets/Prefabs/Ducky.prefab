@@ -5190,7 +5190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torqueAmount: 0.5
-  boostSpeed: 50
+  boostSpeed: 55
   brakeSpeed: 5
   baseSpeed: 15
   animator: {fileID: 7408291668838740006}
@@ -5356,6 +5356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostEffect: {fileID: 7781087431638246944}
+  boostDelay: 0.2
 --- !u!1 &2739900851703628201
 GameObject:
   m_ObjectHideFlags: 0

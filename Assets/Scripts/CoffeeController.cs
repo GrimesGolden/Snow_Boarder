@@ -10,7 +10,7 @@ public class CoffeeController : MonoBehaviour
 
     [SerializeField] int boostAmount = 25; 
     BoostCounter boostCounter;
-    float coffeeDelay = 0.5f;
+    [SerializeField] float coffeeDelay = 0.5f;
     bool coffeeHit = false; 
     void Start()
     {
@@ -25,14 +25,14 @@ public class CoffeeController : MonoBehaviour
     {
         if (other.tag == "Player" && !coffeeHit)
         {
-            BoostSounds();
+            UpdateSounds();
             UpdateValues(); 
             Invoke("DestroyCoffee", coffeeDelay);
 
         }
     }
 
-    void BoostSounds()
+    void UpdateSounds()
     {
         SoundManager.StopSound();
         SoundManager.PlaySound(SoundType.COFFEE);

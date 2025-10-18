@@ -5,12 +5,16 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
 public class AppleController : MonoBehaviour
-{
-    [SerializeField] ParticleSystem appleEffect;
+{   
+    // Controlling script for the apple pickup which updates score. 
+    // CoffeeController is essentially the same with small differences associated with boost value. See CoffeeController.cs
+    [SerializeField] ParticleSystem appleEffect; // The associated particle effect
 
-    [SerializeField] Animator animator;
+    [SerializeField] Animator animator; // The associated sprite animation
+
+    [SerializeField] int AppleValue = 1; // How many scoring points an apple is worth
     ScoreCounter scoreCounter;
-    float appleDelay = 0.5f; // This works, even if 0.5f is a bit too long. 
+    [SerializeField] float appleDelay = 0.5f; // How long a pickup should hold before destruction after pickup
     bool appleHit = false; 
 
     void Start()
@@ -21,18 +25,31 @@ public class AppleController : MonoBehaviour
         // Get the ScoreCounter (Script) component out of scoreGO
         scoreCounter = scoreTxt.GetComponent<ScoreCounter>();
     }
-    void OnTriggerEnter2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other)
+    {   
+        // On trigger if hit by a player, act accordingly. 
         if (other.tag == "Player" && !appleHit)
         {
-            SoundManager.StopSound(); 
-            SoundManager.PlaySound(SoundType.APPLE);
-            appleEffect.Play();
-            scoreCounter.score += 1; // MAGIC
-            appleHit = true; 
-            animator.SetBool("collect", true); 
-            Invoke("DestroyApple", appleDelay); 
-      
+            UpdateSounds();
+            UpdateValues(); 
+            Invoke("DestroyApple", appleDelay); // Invoke after a short delay to give pickup effects/animation time to display. 
+
         }
+    }
+    
+    void UpdateSounds()
+    {   
+        // Play associated sound using SoundManager
+        SoundManager.StopSound();
+        SoundManager.PlaySound(SoundType.APPLE);
+    }
+    
+    void UpdateValues()
+    {
+        appleEffect.Play();
+        scoreCounter.score += AppleValue; 
+        appleHit = true; // This prevents double triggers for pickups. 
+        animator.SetBool("collect", true); // See the animator controller, this triggers the associated state transition. 
     }
     
     void DestroyApple()
