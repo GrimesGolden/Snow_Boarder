@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Boost : MonoBehaviour
 {
-    BoostCounter boostCounter;
+    int boostRemaining = 0; 
     [SerializeField] ParticleSystem boostEffect;
-    [SerializeField] float boostDelay = 0.2f; 
-    float t;
+    [SerializeField] float boostDelay = 0.2f;
+    float t = 1; // It doesn't matter what number we initialize, so long as it's >= 1. 
+    BoostCounter boostCounter; 
     void Start()
     {
         // Find a GameObject named ScoreCounter in the scene hierarchy.
-        GameObject boostTxt = GameObject.Find("BoostText");
+        GameObject boostManager = GameObject.Find("BoostManager");
 
         // Get the ScoreCounter (Script) component out of scoreGO
-        boostCounter = boostTxt.GetComponent<BoostCounter>();
-        t = 5; // It doesn't matter what number we use to start, so long as it's >= 1. 
+        boostCounter = boostManager.GetComponent<BoostCounter>();
     }
     
     void Update()
@@ -24,22 +24,26 @@ public class Boost : MonoBehaviour
         t += Time.deltaTime; 
     }
 
-    public void HandleBoost( SurfaceEffector2D player, float speed)
+    public void HandleBoost(SurfaceEffector2D player, float speedIncrease, float baseSpeed)
     {
-        //if (boostCounter.boostVal > 0) // This doesn't need to be a public val like this, but it works. Score counter does the same thing.
-      //  {
-            // --boostCounter.boostVal;
-            // player.speed = speed;
-            //  boostEffect.Play(); 
-            //t = 0; 
-      //  }
-        if (t >= boostDelay && boostCounter.boostVal > 0)
+        boostRemaining = boostCounter.GetBoostCount();
+        Debug.Log("Boost Remaining: " + boostRemaining);
+        if (t >= boostDelay && boostRemaining > 0)
+        // Triggers only after a time trigger and if there is boost remaining. 
+        // But come to think of it why does the boost counter hold the boost?! A: because it counts the boost and manages it in a central location. 
+        // Otherwise we play pass the parcel with the boost amount. 
         {
-            --boostCounter.boostVal;
-            player.speed = speed;
+            //Debug.Log("Handling boost, inside if!");
+            boostCounter.SubBoostCount(1);
+            player.speed = speedIncrease;
             boostEffect.Play();
             // This prevents eccessive spamming of the boost. 
             t = 0;
+        }
+        else if (t <= boostDelay && boostRemaining <= 0)
+        {
+            Debug.Log("OUT OF BOOST.");
+            player.speed = baseSpeed; // This way if the player holds down W, it still detects. 
         }
     }
 }

@@ -8,17 +8,18 @@ public class CoffeeController : MonoBehaviour
     [SerializeField] ParticleSystem boostEffect;
     [SerializeField] Animator animator;
 
-    [SerializeField] int boostAmount = 25; 
-    BoostCounter boostCounter;
+    [SerializeField] int boostAmount = 25;
     [SerializeField] float coffeeDelay = 0.5f;
+
+     BoostCounter boostCounter; 
     bool coffeeHit = false; 
     void Start()
     {
-         // Find a GameObject named ScoreCounter in the scene hierarchy.
-        GameObject boostTxt = GameObject.Find("BoostText");
+         // Find a GameObject named BoostManager in the scene hierarchy.
+        GameObject boostManager = GameObject.Find("BoostManager");
 
-        // Get the ScoreCounter (Script) component out of scoreGO
-        boostCounter = boostTxt.GetComponent<BoostCounter>();
+        // Get the boostCounter (Script) component out of BoostManager
+        boostCounter = boostManager.GetComponent<BoostCounter>(); 
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -41,7 +42,7 @@ public class CoffeeController : MonoBehaviour
     void UpdateValues()
     {
         boostEffect.Play();
-        boostCounter.boostVal += boostAmount;
+        boostCounter.AddBoostCount(boostAmount);
 
         coffeeHit = true;
         animator.SetBool("collect", true);

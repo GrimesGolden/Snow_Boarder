@@ -1202,7 +1202,6 @@ GameObject:
   - component: {fileID: 277692527}
   - component: {fileID: 277692530}
   - component: {fileID: 277692529}
-  - component: {fileID: 277692531}
   m_Layer: 5
   m_Name: BoostText
   m_TagString: Untagged
@@ -1326,19 +1325,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277692526}
   m_CullTransparentMesh: 1
---- !u!114 &277692531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277692526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae967754ee3b374889873485a48489d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boostVal: 0
 --- !u!1 &283062820
 GameObject:
   m_ObjectHideFlags: 0
@@ -4877,8 +4863,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1490752566}
+  - component: {fileID: 1490752567}
   m_Layer: 5
-  m_Name: BoostDisplay
+  m_Name: BoostManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4904,6 +4891,18 @@ RectTransform:
   m_AnchoredPosition: {x: -290, y: 205}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1490752567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490752565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae967754ee3b374889873485a48489d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1519739943
 GameObject:
   m_ObjectHideFlags: 0
@@ -7692,6 +7691,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 93014610528909129, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
+      propertyPath: baseSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 93014610528909129, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
+      propertyPath: boostSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 93014610528909129, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
+      propertyPath: brakeSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1698544771482252367, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
       propertyPath: m_Name
       value: Ducky

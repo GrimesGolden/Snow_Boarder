@@ -5,16 +5,34 @@ using UnityEngine;
 
 public class BoostCounter : MonoBehaviour
 {
-    private TextMeshProUGUI uiText;
-    public int boostVal = 10000; 
+    //private TextMeshProUGUI uiText;
+    private int boostCount = 0; // We start with zero boost. 
+
+    TextMeshProUGUI uiText;
     void Start()
     {
-        uiText = GetComponent<TextMeshProUGUI>();
+        uiText = GetComponentInChildren<TextMeshProUGUI>(); // Access the child text object. 
     }
 
-    // Update is called once per frame
-    void Update()
+    void UpdateCounter()
     {
-        uiText.text = "BOOST: " + boostVal.ToString("#,0");
+        uiText.text = "BOOST: " + boostCount.ToString("#,0");
+    }
+
+    public int GetBoostCount()
+    {
+        return boostCount;
+    }
+
+    public void AddBoostCount(int boostVal)
+    {
+        boostCount += boostVal;
+        UpdateCounter();
+    }
+
+    public void SubBoostCount(int boostVal)
+    {
+        boostCount -= boostVal;
+        UpdateCounter(); 
     }
 }

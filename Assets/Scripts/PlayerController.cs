@@ -46,8 +46,8 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
-            //surfaceEffector2D.speed = boostSpeed;
-            GetComponent<Boost>().HandleBoost(surfaceEffector2D, boostSpeed); 
+            Debug.Log("Up arrow detected.");
+            GetComponent<Boost>().HandleBoost(surfaceEffector2D, boostSpeed, baseSpeed);
             animator.SetFloat("Speed", boostSpeed); 
         }
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
