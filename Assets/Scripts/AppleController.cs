@@ -58,6 +58,7 @@ public class AppleController : MonoBehaviour
     
     void LoadData()
     {
+        // Load values from DataManager script into prefab values. 
         GameObject gameManager = GameObject.Find("GameManager");
         dataManager = gameManager.GetComponentInChildren<DataManager>();
 

@@ -5352,7 +5352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostEffect: {fileID: 7781087431638246944}
-  boostDelay: 0.2
+  animator: {fileID: 7408291668838740006}
 --- !u!1 &2739900851703628201
 GameObject:
   m_ObjectHideFlags: 0

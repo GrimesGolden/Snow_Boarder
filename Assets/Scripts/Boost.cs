@@ -4,30 +4,42 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class Boost : MonoBehaviour
-{   
+{
     // This script handles the gameplay of the boosting ability. 
     // The tracking/counting is handled by BoostCounter.cs
-    int boostRemaining; 
+
+    DataManager dataManager;
+    int boostRemaining;
     [SerializeField] ParticleSystem boostEffect;
-    [SerializeField] float boostDelay = 0.2f;
+
+    [SerializeField] Animator animator; 
+    float boostDelay;
     float t = 1; // It doesn't matter what number we initialize, so long as it's >= 1. 
     BoostCounter boostCounter; 
     void Start()
     {
+        LoadData(); 
+    }
+
+    void Update()
+    {
+        // update the tracking time. 
+        // Tracks how long we are boosting for. 
+        t += Time.deltaTime;
+    }
+    
+    void LoadData()
+    {   
         // Find a GameObject named BoostManager in the scene hierarchy.
         GameObject boostManager = GameObject.Find("BoostManager");
+        // Load values from DataManager script into prefab values. 
+        GameObject gameManager = GameObject.Find("GameManager");
 
         // Get the BoostCounter.cs script out of BoostManager
         boostCounter = boostManager.GetComponent<BoostCounter>();
-
-        boostRemaining = boostCounter.GetBoostCount(); 
-    }
-    
-    void Update()
-    {   
-        // update the tracking time. 
-        // Tracks how long we are boosting for. 
-        t += Time.deltaTime; 
+        boostRemaining = boostCounter.GetBoostCount();
+        dataManager = gameManager.GetComponentInChildren<DataManager>();
+        boostDelay = dataManager.GetBoostDelay(); 
     }
 
     public void HandleBoost(SurfaceEffector2D player, float speedIncrease, float baseSpeed)
@@ -42,6 +54,8 @@ public class Boost : MonoBehaviour
             boostCounter.SubBoostCount(1);
             // Increase the players speed by the given boost amount. 
             player.speed = speedIncrease;
+            // Update sprite animations.
+            animator.SetFloat("Speed", speedIncrease); 
             // Play the particle effect. 
             boostEffect.Play();
             // Resetting prevents eccessive spamming of the boost. 
@@ -53,6 +67,7 @@ public class Boost : MonoBehaviour
             // Reset the speed. 
             // This prevents gameplay in which, while the player holds down W, boost is infinite. 
             player.speed = baseSpeed; 
+            animator.SetFloat("Speed", baseSpeed); // Add a walking animation when braking. 
         }
     }
 }

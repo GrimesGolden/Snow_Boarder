@@ -7,6 +7,7 @@ public class DataManager : MonoBehaviour
     // A central holding space for importing serialized data and settings
     [SerializeField] float torqueAmount = 1f; // 1f is a good standard. // How fast Ducky rotates.
     [SerializeField] float boostSpeed = 450f; // 50 is a good standard.  // How fast Ducky boosts. 
+     [SerializeField] float boostDelay = 0.2f; // Debuff speed before boost triggers. (How fast boost will deplete)
 
     [SerializeField] float brakeSpeed = 5f; // 5 is a good standard. // How hard Ducky brakes. 
     [SerializeField] float baseSpeed = 25f; // 10-25 is a good standard. // Duckys base speed. 
@@ -27,6 +28,11 @@ public class DataManager : MonoBehaviour
     public float GetBoostSpeed()
     {
         return boostSpeed;
+    }
+
+    public float GetBoostDelay()
+    {
+        return boostDelay; 
     }
 
     public float GetBrakeSpeed()

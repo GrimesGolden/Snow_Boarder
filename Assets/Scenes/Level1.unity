@@ -845,8 +845,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   torqueAmount: 0.2
   boostSpeed: 25
+  boostDelay: 0.2
   brakeSpeed: 5
   baseSpeed: 10
+  appleValue: 1
+  coffeeAmount: 25
+  appleDelay: 0.5
+  coffeeDelay: 0.5
 --- !u!1 &157962987
 GameObject:
   m_ObjectHideFlags: 0
@@ -7708,10 +7713,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1134684487179107206, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: m_AngularDrag
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1698544771482252367, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
       propertyPath: m_Name
       value: Ducky

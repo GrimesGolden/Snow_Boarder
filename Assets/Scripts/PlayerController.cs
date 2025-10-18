@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb2d;
 
     DataManager dataManager; 
-    float torqueAmount; // 1f is a good standard. 
-    float boostSpeed; // 50 is a good standard.  
+    float torqueAmount; // 0.5f is a good standard. 
+    float boostSpeed; // 25-50 is a good standard.  
 
     float brakeSpeed; // 5 is a good standard. 
     float baseSpeed; // 10-25 is a good standard.
@@ -23,10 +23,11 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>(); // Used for torque control
-        LoadData(); 
+
+        LoadData(); // Load from DataManager
         
         surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>(); // Used for speed control. 
-        surfaceEffector2D.speed = baseSpeed;
+        surfaceEffector2D.speed = baseSpeed; // Standard speed activates. 
     }
 
     void Update()
@@ -62,12 +63,12 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
-            Debug.Log("Up arrow detected.");
-            GetComponent<Boost>().HandleBoost(surfaceEffector2D, boostSpeed, baseSpeed);
-            animator.SetFloat("Speed", boostSpeed); 
+            // Activate boost effects. 
+            GetComponent<Boost>().HandleBoost(surfaceEffector2D, boostSpeed, baseSpeed); 
         }
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-        {
+        {   
+            // Adjust speed and animation. 
             surfaceEffector2D.speed = brakeSpeed;
             animator.SetFloat("Speed", brakeSpeed);
             // Access the public reset method of camera controller and reset it here.
@@ -75,9 +76,10 @@ public class PlayerController : MonoBehaviour
             GetComponent<AirTime>().ResetAirTime(); 
         }
         else
-        {
-            surfaceEffector2D.speed = baseSpeed; 
+        {   
+            // Speed continues as usual. 
             animator.SetFloat("Speed", baseSpeed);
+            surfaceEffector2D.speed = baseSpeed; 
         }
     }
 
