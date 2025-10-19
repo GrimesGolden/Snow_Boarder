@@ -5,8 +5,17 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
+    // Handles pause menu and pause functionality. 
     bool GameIsPaused = false;
-    [SerializeField] GameObject pauseMenuUI; 
+
+    GameObject pauseMenuUI;
+    GameObject player; 
+    
+    void Start()
+    {
+        pauseMenuUI = GameObject.Find("Canvas").transform.Find("PauseMenu").gameObject;
+        player = GameObject.Find("Ducky"); // Search through the entire hierarchy for ducky. 
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -35,9 +44,9 @@ public class Pause : MonoBehaviour
     {
         Time.timeScale = 0f;
         SoundManager.StopSound();
-        GetComponent<DustTrail>().StopTrailSound(); 
-        SoundManager.PlaySound(SoundType.PAUSE); 
+        player.GetComponent<DustTrail>().StopTrailSound();
+        SoundManager.PlaySound(SoundType.PAUSE);
         GameIsPaused = true;
-        pauseMenuUI.SetActive(true); 
+        pauseMenuUI.SetActive(true);
     }
 }
