@@ -4,10 +4,17 @@ using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
-    [SerializeField] float loadDelay = 1.0f;
+    float finishDelay;
     [SerializeField] ParticleSystem finishEffect;
 
+    DataManager dataManager;
+
     bool finish = false; 
+
+    void Start()
+    {
+        LoadData(); 
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player" && !finish)
@@ -20,15 +27,22 @@ public class FinishLine : MonoBehaviour
             // Reset bool to prevent re-trigger. 
             finish = true;
             other.GetComponent<PlayerController>().DisableControls(); 
-            Invoke("ReloadScene", loadDelay);
+            Invoke("ReloadScene", finishDelay);
         }
     }
 
     void ReloadScene()
-    {   
+    {
         GameObject gameManager = GameObject.Find("GameManager"); // Find and activate script. 
-        LevelManager manager = gameManager.GetComponent<LevelManager>();
-        manager.DestroyMe(); // This needs refactor. 
+        DataManager dataManager = gameManager.GetComponent<DataManager>();
+        dataManager.DestroyMe(); // Destroy the old copy so that we refresh with a new data set. 
         SceneManager.LoadScene(0);
+    }
+    
+    void LoadData()
+    {
+        GameObject gameManager = GameObject.Find("GameManager"); // Find and activate script. 
+        dataManager = gameManager.GetComponent<DataManager>();
+        finishDelay = dataManager.GetFinishDelay(); 
     }
 }

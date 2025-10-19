@@ -8,10 +8,11 @@ public class DataManager : MonoBehaviour
 {
     // A central holding space for importing serialized data and settings
     public static DataManager I { get; private set; } // Only one instance exists per scene. 
-    //[SerializeField] Image[] hearts; // The image to represent lives. 
     const int MaxLives = 3; 
     [SerializeField] int lives; // The max amount of lives available. 
     [SerializeField] float crashDelay = 0.5f; // 0.5f is a good standard. // The time to wait before reloading scene after crash. 
+
+    [SerializeField] float finishDelay = 1f; // 1f is a good standard. // The time to wait before reloading after finish. 
     [SerializeField] float torqueAmount = 1f; // 1f is a good standard. // How fast Ducky rotates.
     [SerializeField] float boostSpeed = 450f; // 50 is a good standard.  // How fast Ducky boosts. 
      [SerializeField] float boostDelay = 0.2f; // Debuff speed before boost triggers. (How fast boost will deplete)
@@ -54,7 +55,7 @@ public class DataManager : MonoBehaviour
         if (lives <= 0)
         {
             // Explicitely destroy. 
-            Destroy(LevelManager.I.gameObject);
+            Destroy(DataManager.I.gameObject);
             DataManager.I = null;
             SceneManager.LoadScene(0);
         }
@@ -71,7 +72,12 @@ public class DataManager : MonoBehaviour
 
     public float GetCrashDelay()
     {
-        return crashDelay; 
+        return crashDelay;
+    }
+    
+    public float GetFinishDelay()
+    {
+        return finishDelay; 
     }
 
     public float GetTorqueVal()

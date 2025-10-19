@@ -11,8 +11,6 @@ public class CrashDetector : MonoBehaviour
     bool isCrash = false; 
     
     GameObject gameManager;
-    //LevelManager levelManager;
-
     DataManager dataManager; 
 
     void Start()
@@ -40,7 +38,6 @@ public class CrashDetector : MonoBehaviour
     void LoadData()
     {
         gameManager = GameObject.Find("GameManager"); // Find object and scripts for later activation.
-        //levelManager = gameManager.GetComponent<LevelManager>();
         dataManager = gameManager.GetComponent<DataManager>();
         crashDelay = dataManager.GetCrashDelay(); 
         
