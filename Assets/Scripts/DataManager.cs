@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DataManager : MonoBehaviour
 {
     // A central holding space for importing serialized data and settings
-
+    public static DataManager I { get; private set; } // Only one instance exists per scene. 
+    //[SerializeField] Image[] hearts; // The image to represent lives. 
+    const int MaxLives = 3; 
+    [SerializeField] int lives; // The max amount of lives available. 
     [SerializeField] float crashDelay = 0.5f; // 0.5f is a good standard. // The time to wait before reloading scene after crash. 
     [SerializeField] float torqueAmount = 1f; // 1f is a good standard. // How fast Ducky rotates.
     [SerializeField] float boostSpeed = 450f; // 50 is a good standard.  // How fast Ducky boosts. 
@@ -21,6 +26,48 @@ public class DataManager : MonoBehaviour
     [SerializeField] float appleDelay = 0.5f; // How long an apple pickup should hold before destruction after pickup
 
     [SerializeField] float coffeeDelay = 0.5f; // How long a coffee pickup should hold before destruction after pickup
+
+    void Awake()
+    {
+        // This code maintains it so that only one DataManager exists at any one time. 
+        if (I != null) { Destroy(gameObject); return; }
+        I = this;
+        DontDestroyOnLoad(gameObject); // Keep the old manager and don't delete the old one
+
+        // Initialize once per app run (could also load from PlayerPrefs here)
+        lives = MaxLives;
+    }
+    
+    public void DestroyMe()
+    {
+        Destroy(DataManager.I.gameObject);
+        DataManager.I = null;
+    }
+
+    public void TakeDamage()
+    {
+        lives--;
+        ReloadScene();
+    }
+    public void ReloadScene()
+    {
+        if (lives <= 0)
+        {
+            // Explicitely destroy. 
+            Destroy(LevelManager.I.gameObject);
+            DataManager.I = null;
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            SceneManager.LoadScene(1);
+        }
+    }
+
+    public int GetLives()
+    {
+        return lives; 
+    }
 
     public float GetCrashDelay()
     {

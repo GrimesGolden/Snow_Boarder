@@ -9,23 +9,23 @@ public class HealthManager : MonoBehaviour
 {
 
     GameObject gameManager;
-    LevelManager manager;
+    DataManager dataManager;
     [SerializeField] Image[] hearts;
 
-    int health;
+    int lives;
 
     void Start()
     {
         gameManager = GameObject.Find("GameManager");
-        manager = gameManager.GetComponent<LevelManager>();
+        dataManager = gameManager.GetComponent<DataManager>();
 
-        health = manager.Health; 
+        lives = dataManager.GetLives(); 
         RefreshHearts(); 
     }
 
     void RefreshHearts()
     {
-        for (int i = (hearts.Length); i > health; --i)
+        for (int i = (hearts.Length); i > lives; --i)
         {
             hearts[i - 1].gameObject.SetActive(false);
         }
