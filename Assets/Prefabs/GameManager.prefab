@@ -48,11 +48,17 @@ MonoBehaviour:
   crashDelay: 0.5
   finishDelay: 1
   torqueAmount: 0.5
-  boostSpeed: 35
+  boostSpeed: 65
   boostDelay: 0.2
-  brakeSpeed: 5
   baseSpeed: 15
+  jumpForce: 40
+  brakeForce: 5
   appleValue: 1
   coffeeAmount: 10
   appleDelay: 0.5
   coffeeDelay: 0.5
+  long_air: 5
+  medium_air: 3
+  base_cam: 10
+  medium_cam: 20
+  long_cam: 30
