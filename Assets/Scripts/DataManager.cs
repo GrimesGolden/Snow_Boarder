@@ -5,6 +5,8 @@ using UnityEngine;
 public class DataManager : MonoBehaviour
 {
     // A central holding space for importing serialized data and settings
+
+    [SerializeField] float crashDelay = 0.5f; // 0.5f is a good standard. // The time to wait before reloading scene after crash. 
     [SerializeField] float torqueAmount = 1f; // 1f is a good standard. // How fast Ducky rotates.
     [SerializeField] float boostSpeed = 450f; // 50 is a good standard.  // How fast Ducky boosts. 
      [SerializeField] float boostDelay = 0.2f; // Debuff speed before boost triggers. (How fast boost will deplete)
@@ -19,6 +21,11 @@ public class DataManager : MonoBehaviour
     [SerializeField] float appleDelay = 0.5f; // How long an apple pickup should hold before destruction after pickup
 
     [SerializeField] float coffeeDelay = 0.5f; // How long a coffee pickup should hold before destruction after pickup
+
+    public float GetCrashDelay()
+    {
+        return crashDelay; 
+    }
 
     public float GetTorqueVal()
     {

@@ -2,8 +2,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement; 
 
 public class CrashDetector : MonoBehaviour
-{
-    [SerializeField] float loadDelay = 0.5f;
+{   
+    // Handles collisions including the crashEffect and healthBar. 
+    float crashDelay;
     [SerializeField] ParticleSystem crashEffect;
 
     [SerializeField] GameObject healthBar;
@@ -12,22 +13,36 @@ public class CrashDetector : MonoBehaviour
     GameObject gameManager;
     LevelManager levelManager;
 
+    DataManager dataManager; 
+
+    void Start()
+    {
+        LoadData(); 
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Terrain" && !isCrash)
         {
             SoundManager.PlaySound(SoundType.CRASH);
             crashEffect.Play();
-            GetComponent<PlayerController>().DisableControls();
-            isCrash = true;
-            Invoke("UpdateLevel", loadDelay);
+            GetComponent<PlayerController>().DisableControls(); // Disable controls to prevent player moving after collision. 
+            isCrash = true; // Prevent retrigger. 
+            Invoke("UpdateLevel", crashDelay);
         }
     }
 
     void UpdateLevel()
     {
-        gameManager = GameObject.Find("GameManager"); // Find and activate script. 
-        levelManager = gameManager.GetComponent<LevelManager>(); 
         levelManager.TakeDamage();
+    }
+    
+    void LoadData()
+    {
+        gameManager = GameObject.Find("GameManager"); // Find object and scripts for later activation.
+        levelManager = gameManager.GetComponent<LevelManager>();
+        dataManager = gameManager.GetComponent<DataManager>();
+        crashDelay = dataManager.GetCrashDelay(); 
+        
     }
 }
