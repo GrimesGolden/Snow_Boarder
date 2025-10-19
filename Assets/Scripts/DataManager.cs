@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor.ShaderGraph.Internal;
 
 public class DataManager : MonoBehaviour
 {
@@ -27,6 +28,13 @@ public class DataManager : MonoBehaviour
     [SerializeField] float appleDelay = 0.5f; // How long an apple pickup should hold before destruction after pickup
 
     [SerializeField] float coffeeDelay = 0.5f; // How long a coffee pickup should hold before destruction after pickup
+
+    [SerializeField] int long_air = 5; // The time to wait before zooming out the ortho camera. 
+    [SerializeField] int medium_air = 3; // The time to wait before zooming out the ortho camera.
+
+    [SerializeField] float base_cam = 10f; // The standard camera distance. 
+    [SerializeField] float medium_cam = 20f; // The distance the camera will zoom out after medium wait. 
+    [SerializeField] float long_cam = 30f; // The distance the camera will zoom out. 
 
     void Awake()
     {
@@ -120,9 +128,34 @@ public class DataManager : MonoBehaviour
     {
         return appleValue;
     }
-    
+
     public float GetAppleDelay()
     {
-        return appleDelay; 
+        return appleDelay;
+    }
+
+    public int GetLongAir()
+    {
+        return long_air;
+    }
+
+    public int GetMedAir()
+    {
+        return medium_air;
+    }
+
+    public float GetBaseCam()
+    {
+        return base_cam;
+    }
+
+    public float GetMedCam()
+    {
+        return medium_cam;
+    }
+
+    public float GetLongCam()
+    {
+        return long_cam; 
     }
 }

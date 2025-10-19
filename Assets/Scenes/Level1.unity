@@ -7750,6 +7750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
+      propertyPath: boostSpeed
+      value: 65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

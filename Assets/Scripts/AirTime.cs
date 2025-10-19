@@ -10,7 +10,13 @@ public class AirTime : MonoBehaviour
     CinemachineVirtualCamera vcam;
     
     float t;
-    float standardCam = 10f; // The distance the camera will normally stand away from the player. 
+    float base_cam; // The distance the camera will normally stand away from the player. 
+    int long_air; // The times to wait before zooming out. 
+    int medium_air;
+
+    float long_cam; // The distance the camera will zoom. 
+    float medium_cam;
+
 
     bool inAir = false; // Several bools for tracking air time.
     bool isLongAir = false;
@@ -20,6 +26,8 @@ public class AirTime : MonoBehaviour
         // Upon script start, find the virtual camera, and zero out the timer. 
         vcam = FindAnyObjectByType<CinemachineVirtualCamera>();
         t = 0;
+
+        LoadData(); // Update all camera distances and wait times. 
     }
 
     void Update()
@@ -46,13 +54,6 @@ public class AirTime : MonoBehaviour
 
     void TrackAirTime()
     {
-        // Some constants for camera values and timing. 
-        const int long_air = 5; // The times to wait before zooming out. 
-        const int medium_air = 3;
-
-        const float long_cam = 30f; // The distance the camera will zoom. 
-        const float medium_cam = 20f;
-
         // Continuously update time (it only resets upon a collision)
         // Essentially we are tracking how long "ducky" is in the air.
         t += Time.deltaTime;
@@ -74,16 +75,28 @@ public class AirTime : MonoBehaviour
             isMediumAir = true;
         }
     }
-    
+
     public void ResetAirTime()
-    {   
+    {
         // Zero out the timer, and return to standard camera size. 
         t = 0;
         // Reset boolean triggers (these prevent looping sound)
-        inAir = false; 
+        inAir = false;
         isLongAir = false;
         isMediumAir = false;
         // Return to the normal camera upon landing. 
-        vcam.m_Lens.OrthographicSize = standardCam;
+        vcam.m_Lens.OrthographicSize = base_cam;
+    }
+    
+    public void LoadData()
+    {   
+        // Use the data manager to load in the various values which can be tunes from serializations. 
+        DataManager dm = DataManager.I;
+        long_cam = dm.GetLongCam();
+        medium_cam = dm.GetMedCam();
+        base_cam = dm.GetBaseCam(); 
+        long_air = dm.GetLongAir();
+        medium_air = dm.GetMedAir(); 
+
     }
 }
