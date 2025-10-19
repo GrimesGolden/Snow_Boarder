@@ -26,7 +26,7 @@ public class Pause : MonoBehaviour
             }
             else if (!GameIsPaused)
             {
-                StopGame(); 
+                StopGame();
             }
 
         }
@@ -34,18 +34,19 @@ public class Pause : MonoBehaviour
 
     void Resume()
     {
-        Time.timeScale = 1f;
+        Time.timeScale = 1f; // Set the time scale back to normal (game no longer paused)
         GameIsPaused = false;
-        pauseMenuUI.SetActive(false);
-        SoundManager.StopSound();
+        pauseMenuUI.SetActive(false); // Hide pause menu
+        SoundManager.StopSound(); // Stop the pause menu song. 
     }
 
     void StopGame()
     {
-        Time.timeScale = 0f;
-        SoundManager.StopSound();
+        Time.timeScale = 0f; // Pause the game literally, stop the time scale. 
+        SoundManager.StopSound(); // Stop all sounds currently playing. 
         player.GetComponent<DustTrail>().StopTrailSound();
-        SoundManager.PlaySound(SoundType.PAUSE);
+
+        SoundManager.PlaySound(SoundType.PAUSE); // Play pause menu jingle and show UI. 
         GameIsPaused = true;
         pauseMenuUI.SetActive(true);
     }

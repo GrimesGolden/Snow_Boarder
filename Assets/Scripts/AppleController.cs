@@ -21,12 +21,6 @@ public class AppleController : MonoBehaviour
 
     void Start()
     {
-        // Find a GameObject named ScoreCounter in the scene hierarchy.
-        GameObject scoreTxt = GameObject.Find("ScoreText");
-
-        // Get the ScoreCounter (Script) component out of scoreGO
-        scoreCounter = scoreTxt.GetComponent<ScoreCounter>();
-
         LoadData(); 
     }
     void OnTriggerEnter2D(Collider2D other)
@@ -57,11 +51,14 @@ public class AppleController : MonoBehaviour
     }
     
     void LoadData()
-    {
-        // Load values from DataManager script into prefab values. 
-      //  GameObject gameManager = GameObject.Find("GameManager");
-       // dataManager = gameManager.GetComponentInChildren<DataManager>();
+    {  
+       // Find a GameObject named ScoreCounter in the scene hierarchy.
+        GameObject scoreDisplay = GameObject.Find("ScoreDisplay");
 
+        // Get the ScoreCounter (Script) component out of scoreGO
+        scoreCounter = scoreDisplay.GetComponent<ScoreCounter>();
+
+        // Load values from DataManager script into prefab values.
         appleValue = DataManager.I.GetAppleVal();
         appleDelay = DataManager.I.GetAppleDelay(); 
     }

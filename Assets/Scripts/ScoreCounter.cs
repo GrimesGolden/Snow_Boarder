@@ -9,12 +9,18 @@ public class ScoreCounter : MonoBehaviour
     private TextMeshProUGUI uiText;
     public int score = 0;
     void Start()
-    {
-        uiText = GetComponent<TextMeshProUGUI>();
+    {   
+        ///Find a way to access this component, a component of the child object. 
+        uiText = GetComponentInChildren<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
+    {
+        uiText.text = "SCORE: " + score.ToString("#,0");
+    }
+
+    public void UpdateScore()
     {
         uiText.text = "SCORE: " + score.ToString("#,0");
     }
