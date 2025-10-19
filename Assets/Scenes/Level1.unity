@@ -2496,6 +2496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 632832507}
+  - component: {fileID: 632832508}
   m_Layer: 5
   m_Name: ScoreDisplay
   m_TagString: Untagged
@@ -2523,6 +2524,19 @@ RectTransform:
   m_AnchoredPosition: {x: 20, y: 205}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &632832508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632832506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ea2b2ff07f3fb46aa2fb019c0fea25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
 --- !u!1 &713586980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2709,7 +2723,6 @@ GameObject:
   - component: {fileID: 749844560}
   - component: {fileID: 749844562}
   - component: {fileID: 749844561}
-  - component: {fileID: 749844563}
   m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
@@ -2833,19 +2846,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749844559}
   m_CullTransparentMesh: 1
---- !u!114 &749844563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749844559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62ea2b2ff07f3fb46aa2fb019c0fea25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
 --- !u!1 &825580896
 GameObject:
   m_ObjectHideFlags: 0
@@ -3574,7 +3574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1094593712
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7698,14 +7698,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6841398215384116026, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 713586980}
-    - target: {fileID: 7198795661475187328, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: pauseMenuUI
-      value: 
-      objectReference: {fileID: 1094593711}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

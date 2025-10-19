@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,14 +8,14 @@ public class Pause : MonoBehaviour
 {
     // Handles pause menu and pause functionality. 
     bool GameIsPaused = false;
-
-    GameObject pauseMenuUI;
+    TextMeshProUGUI pauseText; 
     GameObject player; 
     
     void Start()
     {
-        pauseMenuUI = GameObject.Find("Canvas").transform.Find("PauseMenu").gameObject;
+        pauseText = GetComponentInChildren<TextMeshProUGUI>(true);  // Get the pause text. 
         player = GameObject.Find("Ducky"); // Search through the entire hierarchy for ducky. 
+        pauseText.enabled = false;
     }
     void Update()
     {
@@ -36,7 +37,7 @@ public class Pause : MonoBehaviour
     {
         Time.timeScale = 1f; // Set the time scale back to normal (game no longer paused)
         GameIsPaused = false;
-        pauseMenuUI.SetActive(false); // Hide pause menu
+        pauseText.enabled = false;  // Hide pause text. 
         SoundManager.StopSound(); // Stop the pause menu song. 
     }
 
@@ -48,6 +49,6 @@ public class Pause : MonoBehaviour
 
         SoundManager.PlaySound(SoundType.PAUSE); // Play pause menu jingle and show UI. 
         GameIsPaused = true;
-        pauseMenuUI.SetActive(true);
+        pauseText.enabled = true; // Show pause text. 
     }
 }

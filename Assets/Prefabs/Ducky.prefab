@@ -4934,7 +4934,6 @@ GameObject:
   - component: {fileID: 705053600957987876}
   - component: {fileID: 1908998384116367055}
   - component: {fileID: 5414154530060221144}
-  - component: {fileID: 7198795661475187328}
   - component: {fileID: 1299976413917533096}
   m_Layer: 0
   m_Name: Ducky
@@ -5189,7 +5188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b0d1f17456f433abb67084505f7b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 7408291668838740006}
 --- !u!114 &6841398215384116026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5202,9 +5200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf50b36f49cef1e4998241e0d1c20858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadDelay: 1
   crashEffect: {fileID: 2606490938111859892}
-  healthBar: {fileID: 0}
 --- !u!114 &705053600957987876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5326,19 +5322,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7198795661475187328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698544771482252367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f0c6b12917adff4aaa77061c43dff65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
 --- !u!114 &1299976413917533096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5352,7 +5335,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostEffect: {fileID: 7781087431638246944}
-  animator: {fileID: 7408291668838740006}
 --- !u!1 &2739900851703628201
 GameObject:
   m_ObjectHideFlags: 0
