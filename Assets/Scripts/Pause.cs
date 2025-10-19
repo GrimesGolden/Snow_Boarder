@@ -13,7 +13,7 @@ public class Pause : MonoBehaviour
     
     void Start()
     {
-        pauseText = GetComponentInChildren<TextMeshProUGUI>(true);  // Get the pause text. 
+        pauseText = GetComponentInChildren<TextMeshProUGUI>(true);  // Get the pause text. // The true argument says to search even inactive objects. 
         player = GameObject.Find("Ducky"); // Search through the entire hierarchy for ducky. 
         pauseText.enabled = false;
     }
