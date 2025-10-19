@@ -87,16 +87,16 @@ public class AirTime : MonoBehaviour
         // Return to the normal camera upon landing. 
         vcam.m_Lens.OrthographicSize = base_cam;
     }
-    
+
     public void LoadData()
-    {   
+    {
         // Use the data manager to load in the various values which can be tunes from serializations. 
         DataManager dm = DataManager.I;
         long_cam = dm.GetLongCam();
         medium_cam = dm.GetMedCam();
-        base_cam = dm.GetBaseCam(); 
+        base_cam = dm.GetBaseCam();
         long_air = dm.GetLongAir();
-        medium_air = dm.GetMedAir(); 
+        medium_air = dm.GetMedAir();
 
     }
 }

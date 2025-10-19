@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
 
     DataManager dataManager;
 
-    Boost boostScript; 
+    Boost boostScript;
+    Jump jumpScript; 
     // Values to be loaded from data manager
     float torqueAmount;  
     float boostSpeed; 
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
     
     void LoadData()
     {
+        jumpScript = GetComponent<Jump>(); // Controlling script for jump gameplay.  
         boostScript = GetComponent<Boost>(); // Used for Boost gameplay scripting. 
         rb2d = GetComponent<Rigidbody2D>(); // Used for torque control
         surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>(); // Used for speed control.
@@ -68,22 +70,27 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
             // Activate boost effects. 
-            boostScript.HandleBoost(surfaceEffector2D, boostSpeed, baseSpeed); 
+            boostScript.HandleBoost(surfaceEffector2D, boostSpeed, baseSpeed);
         }
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-        {   
+        {
             // Adjust speed and animation. 
             surfaceEffector2D.speed = brakeSpeed;
             animator.SetFloat("Speed", brakeSpeed);
             // Access the public reset method of camera controller and reset it here.
             // This prevents slide time during braking, behaving as air time. 
-            GetComponent<AirTime>().ResetAirTime(); 
+            GetComponent<AirTime>().ResetAirTime();
+        }
+        else if (Input.GetKey(KeyCode.Space))
+        // Testing a jump ability. 
+        {
+            jumpScript.HandleJump(rb2d);
         }
         else
-        {   
+        {
             // Speed continues as usual. 
             animator.SetFloat("Speed", baseSpeed);
-            surfaceEffector2D.speed = baseSpeed; 
+            surfaceEffector2D.speed = baseSpeed;
         }
     }
 

@@ -21,6 +21,8 @@ public class DataManager : MonoBehaviour
     [SerializeField] float brakeSpeed = 5f; // 5 is a good standard. // How hard Ducky brakes. 
     [SerializeField] float baseSpeed = 25f; // 10-25 is a good standard. // Duckys base speed. 
 
+    [SerializeField] float jumpForce = 35f; 
+
     [SerializeField] int appleValue = 1; // How many scoring points an apple is worth
 
     [SerializeField] int coffeeAmount = 25; // How much boost value a coffee is worth
@@ -112,6 +114,11 @@ public class DataManager : MonoBehaviour
     public float GetBaseSpeed()
     {
         return baseSpeed;
+    }
+
+    public float GetJumpForce()
+    {
+        return jumpForce; 
     }
 
     public int GetCoffeeVal()
