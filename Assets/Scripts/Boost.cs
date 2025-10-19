@@ -8,7 +8,7 @@ public class Boost : MonoBehaviour
     // This script handles the gameplay of the boosting ability. 
     // The tracking/counting is handled by BoostCounter.cs
 
-    DataManager dataManager;
+    //DataManager dataManager;
     int boostRemaining;
     [SerializeField] ParticleSystem boostEffect; // This needs to be serialized because there are many possible boost effects.
 
@@ -37,9 +37,9 @@ public class Boost : MonoBehaviour
         // Get the BoostCounter.cs script out of BoostManager
         boostCounter = boostManager.GetComponent<BoostCounter>();
         boostRemaining = boostCounter.GetBoostCount();
-        dataManager = gameManager.GetComponentInChildren<DataManager>();
+        //dataManager = gameManager.GetComponentInChildren<DataManager>();
         animator = GetComponentInChildren<Animator>(); 
-        boostDelay = dataManager.GetBoostDelay(); 
+        boostDelay = DataManager.I.GetBoostDelay(); 
     }
 
     public void HandleBoost(SurfaceEffector2D player, float speedIncrease, float baseSpeed)

@@ -31,6 +31,7 @@ public class DataManager : MonoBehaviour
     void Awake()
     {
         // This code maintains it so that only one DataManager exists at any one time. 
+        // A persistent slot across memory where I refers to a static DataManager that is in the DontDestroyOnLoad pocket. i.e persistant + static. 
         if (I != null) { Destroy(gameObject); return; }
         I = this;
         DontDestroyOnLoad(gameObject); // Keep the old manager and don't delete the old one

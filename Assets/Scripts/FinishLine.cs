@@ -4,11 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
+    // Controller for the FinishLine prefab object. 
     float finishDelay;
     [SerializeField] ParticleSystem finishEffect;
-
-    DataManager dataManager;
-
     bool finish = false; 
 
     void Start()
@@ -21,11 +19,13 @@ public class FinishLine : MonoBehaviour
         {   
             // Stop all previous sounds. 
             // Then play the finish sound and particle effect. 
-            SoundManager.StopSound(); 
+            SoundManager.StopSound();
             SoundManager.PlaySound(SoundType.FINISH);
+            // Play finish particle effect.
             finishEffect.Play();
             // Reset bool to prevent re-trigger. 
             finish = true;
+            // Disable controls and evoke a reload. 
             other.GetComponent<PlayerController>().DisableControls(); 
             Invoke("ReloadScene", finishDelay);
         }
@@ -33,16 +33,12 @@ public class FinishLine : MonoBehaviour
 
     void ReloadScene()
     {
-        GameObject gameManager = GameObject.Find("GameManager"); // Find and activate script. 
-        DataManager dataManager = gameManager.GetComponent<DataManager>();
-        dataManager.DestroyMe(); // Destroy the old copy so that we refresh with a new data set. 
-        SceneManager.LoadScene(0);
+        DataManager.I.DestroyMe(); // Destroy the DM so that we refresh with a new data set. 
+        SceneManager.LoadScene(0); // Reload from main menu fresh. 
     }
     
     void LoadData()
     {
-        GameObject gameManager = GameObject.Find("GameManager"); // Find and activate script. 
-        dataManager = gameManager.GetComponent<DataManager>();
-        finishDelay = dataManager.GetFinishDelay(); 
+        finishDelay = DataManager.I.GetFinishDelay(); 
     }
 }

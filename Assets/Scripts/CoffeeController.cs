@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class CoffeeController : MonoBehaviour
 {   
-    DataManager dataManager; 
+   // DataManager dataManager; 
     [SerializeField] ParticleSystem boostEffect;
     [SerializeField] Animator animator;
 
     int boostAmount;
     float coffeeDelay;
 
-     BoostCounter boostCounter; 
+    BoostCounter boostCounter; 
     bool coffeeHit = false; 
     void Start()
     {
@@ -53,11 +53,11 @@ public class CoffeeController : MonoBehaviour
     
     void LoadData()
     {
-        GameObject gameManager = GameObject.Find("GameManager");
-        dataManager = gameManager.GetComponentInChildren<DataManager>();
+      //  GameObject gameManager = GameObject.Find("GameManager");
+       // dataManager = gameManager.GetComponentInChildren<DataManager>();
 
-        boostAmount = dataManager.GetCoffeeVal();
-        coffeeDelay = dataManager.GetCoffeeDelay(); 
+        boostAmount = DataManager.I.GetCoffeeVal();
+        coffeeDelay = DataManager.I.GetCoffeeDelay(); 
     }
     
     

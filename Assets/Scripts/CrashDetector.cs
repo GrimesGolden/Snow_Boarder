@@ -7,12 +7,8 @@ public class CrashDetector : MonoBehaviour
     float crashDelay;
     [SerializeField] ParticleSystem crashEffect;
 
-    [SerializeField] GameObject healthBar;
     bool isCrash = false; 
     
-    GameObject gameManager;
-    DataManager dataManager; 
-
     void Start()
     {
         LoadData(); 
@@ -32,14 +28,14 @@ public class CrashDetector : MonoBehaviour
 
     void UpdateLevel()
     {
-        dataManager.TakeDamage();
+        DataManager.I.TakeDamage();
     }
     
     void LoadData()
     {
-        gameManager = GameObject.Find("GameManager"); // Find object and scripts for later activation.
-        dataManager = gameManager.GetComponent<DataManager>();
-        crashDelay = dataManager.GetCrashDelay(); 
+       // gameManager = GameObject.Find("GameManager"); // Find object and scripts for later activation.
+       // dataManager = gameManager.GetComponent<DataManager>();
+        crashDelay = DataManager.I.GetCrashDelay(); 
         
     }
 }

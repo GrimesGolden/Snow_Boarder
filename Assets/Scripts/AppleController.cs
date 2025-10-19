@@ -9,7 +9,7 @@ public class AppleController : MonoBehaviour
     // Controlling script for the apple pickup which updates score. 
     // CoffeeController is essentially the same with small differences associated with boost value. See CoffeeController.cs
 
-    DataManager dataManager; 
+   // DataManager dataManager; 
     [SerializeField] ParticleSystem appleEffect; // The associated particle effect
 
     [SerializeField] Animator animator; // The associated sprite animation
@@ -59,11 +59,11 @@ public class AppleController : MonoBehaviour
     void LoadData()
     {
         // Load values from DataManager script into prefab values. 
-        GameObject gameManager = GameObject.Find("GameManager");
-        dataManager = gameManager.GetComponentInChildren<DataManager>();
+      //  GameObject gameManager = GameObject.Find("GameManager");
+       // dataManager = gameManager.GetComponentInChildren<DataManager>();
 
-        appleValue = dataManager.GetAppleVal();
-        appleDelay = dataManager.GetAppleDelay(); 
+        appleValue = DataManager.I.GetAppleVal();
+        appleDelay = DataManager.I.GetAppleDelay(); 
     }
     
     void DestroyApple()
