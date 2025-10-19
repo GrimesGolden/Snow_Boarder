@@ -16,12 +16,13 @@ public class DataManager : MonoBehaviour
     [SerializeField] float finishDelay = 1f; // 1f is a good standard. // The time to wait before reloading after finish. 
     [SerializeField] float torqueAmount = 1f; // 1f is a good standard. // How fast Ducky rotates.
     [SerializeField] float boostSpeed = 450f; // 50 is a good standard.  // How fast Ducky boosts. 
-     [SerializeField] float boostDelay = 0.2f; // Debuff speed before boost triggers. (How fast boost will deplete)
+    [SerializeField] float boostDelay = 0.2f; // Debuff speed before boost triggers. (How fast boost will deplete)
 
-    [SerializeField] float brakeSpeed = 5f; // 5 is a good standard. // How hard Ducky brakes. 
     [SerializeField] float baseSpeed = 25f; // 10-25 is a good standard. // Duckys base speed. 
 
-    [SerializeField] float jumpForce = 35f; 
+    [SerializeField] float jumpForce = 35f; // 35f is a good standard. //Ducky's jump force which determines height. 
+
+    [SerializeField] float brakeForce = 5f; // 5-10f is a good standard. // Ducky's braking vector force. 
 
     [SerializeField] int appleValue = 1; // How many scoring points an apple is worth
 
@@ -103,14 +104,9 @@ public class DataManager : MonoBehaviour
 
     public float GetBoostDelay()
     {
-        return boostDelay; 
+        return boostDelay;
     }
-
-    public float GetBrakeSpeed()
-    {
-        return brakeSpeed;
-    }
-
+    
     public float GetBaseSpeed()
     {
         return baseSpeed;
@@ -118,7 +114,12 @@ public class DataManager : MonoBehaviour
 
     public float GetJumpForce()
     {
-        return jumpForce; 
+        return jumpForce;
+    }
+    
+    public float GetBrakeForce()
+    {
+        return brakeForce; 
     }
 
     public int GetCoffeeVal()

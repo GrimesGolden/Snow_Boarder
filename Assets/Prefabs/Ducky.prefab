@@ -4936,6 +4936,7 @@ GameObject:
   - component: {fileID: 5414154530060221144}
   - component: {fileID: 1299976413917533096}
   - component: {fileID: 6711965624874664752}
+  - component: {fileID: 7116042764909733230}
   m_Layer: 0
   m_Name: Ducky
   m_TagString: Player
@@ -5346,6 +5347,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e224c46f722b280448196ec5e7a6e707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7116042764909733230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698544771482252367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f77d2843275e34cb5f8f10cadba7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2739900851703628201

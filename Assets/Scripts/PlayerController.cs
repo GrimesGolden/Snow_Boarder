@@ -11,7 +11,8 @@ public class PlayerController : MonoBehaviour
     DataManager dataManager;
 
     Boost boostScript;
-    Jump jumpScript; 
+    Jump jumpScript;
+    Brake brakeScript; 
     // Values to be loaded from data manager
     float torqueAmount;  
     float boostSpeed; 
@@ -43,16 +44,15 @@ public class PlayerController : MonoBehaviour
     void LoadData()
     {
         jumpScript = GetComponent<Jump>(); // Controlling script for jump gameplay.  
+        brakeScript = GetComponent<Brake>(); 
         boostScript = GetComponent<Boost>(); // Used for Boost gameplay scripting. 
         rb2d = GetComponent<Rigidbody2D>(); // Used for torque control
         surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>(); // Used for speed control.
         GameObject gameManager = GameObject.Find("GameManager"); // Used to access dataManager
-        dataManager = gameManager.GetComponentInChildren<DataManager>(); // Used to load data. 
+        dataManager = DataManager.I; // Used to load data. 
 
         torqueAmount = dataManager.GetTorqueVal(); // 1f is a good standard. 
         boostSpeed = dataManager.GetBoostSpeed(); // 50 is a good standard.  
-
-        brakeSpeed = dataManager.GetBrakeSpeed(); // 5 is a good standard. 
         baseSpeed = dataManager.GetBaseSpeed(); // 10-25 is a good standard.
 
         animator = GetComponentInChildren<Animator>(); // Used for sprite aninations. 
@@ -74,12 +74,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
-            // Adjust speed and animation. 
-            surfaceEffector2D.speed = brakeSpeed;
-            animator.SetFloat("Speed", brakeSpeed);
-            // Access the public reset method of camera controller and reset it here.
-            // This prevents slide time during braking, behaving as air time. 
-            GetComponent<AirTime>().ResetAirTime();
+            brakeScript.HandleBrake(rb2d); 
         }
         else if (Input.GetKey(KeyCode.Space))
         // Testing a jump ability. 
