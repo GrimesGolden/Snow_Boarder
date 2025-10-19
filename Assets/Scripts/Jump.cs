@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Jump : MonoBehaviour
-{
+{   
+    // Handles the gameplay of jumping. 
     bool canJump = false;
+
+    const float dragForce = 5; // This is needed to make the jump affect play with more realism. 
      void OnCollisionEnter2D(Collision2D other)
-    {
+    {   
+        // Can only jump from ground. 
         canJump = true;
     }
 
@@ -14,15 +19,17 @@ public class Jump : MonoBehaviour
     {
         // Reset the bool. 
         canJump = false;
-        // Update will handle tracking. 
     }
 
     public void HandleJump(Rigidbody2D player)
-    {
+    {   
+        // Accept a rigid body sprite to add jumping force. 
         if (canJump)
         {
             Vector2 forceJump = (Vector2.up) * DataManager.I.GetJumpForce();
+            Vector2 leftForce = (Vector2.left) * 5;
             player.AddForce(forceJump);
+            player.AddForce(leftForce); 
         }
     }
 }
