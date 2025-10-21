@@ -6,6 +6,7 @@ public class CrashDetector : MonoBehaviour
     // Handles collisions including the crashEffect and healthBar. 
     float crashDelay;
     [SerializeField] ParticleSystem crashEffect;
+    Animator duckyAnimator; 
 
     bool isCrash = false; 
     
@@ -30,12 +31,25 @@ public class CrashDetector : MonoBehaviour
     {
         DataManager.I.TakeDamage();
     }
-    
+
     void LoadData()
     {
-       // gameManager = GameObject.Find("GameManager"); // Find object and scripts for later activation.
-       // dataManager = gameManager.GetComponent<DataManager>();
-        crashDelay = DataManager.I.GetCrashDelay(); 
-        
+        // gameManager = GameObject.Find("GameManager"); // Find object and scripts for later activation.
+        // dataManager = gameManager.GetComponent<DataManager>();
+        crashDelay = DataManager.I.GetCrashDelay();
+        duckyAnimator = gameObject.GetComponent<Animator>();
+
+    }
+    
+    public void ExplodeDucky()
+    {
+        // Similar to a crash, but this specifically causes Ducky to dramatically explode.
+        // Useful for enemies and other obstacles.
+        SoundManager.PlaySound(SoundType.CRASH); // This will eventually be an explode sound.
+        GameObject board = GameObject.Find("Snowboard");
+        Destroy(board);
+        duckyAnimator.SetBool("IsExplode", true);
+        GetComponent<PlayerController>().DisableControls();
+        Invoke("UpdateLevel", crashDelay);
     }
 }
