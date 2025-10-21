@@ -7891,12 +7891,24 @@ PrefabInstance:
       value: Slimy
       objectReference: {fileID: 0}
     - target: {fileID: 7555587550129236466, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555587550129236466, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555587550129236466, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555587550129236466, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.59
+      value: 4.47
       objectReference: {fileID: 0}
     - target: {fileID: 7555587550129236466, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.42
+      value: -5.73
       objectReference: {fileID: 0}
     - target: {fileID: 7555587550129236466, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.z
