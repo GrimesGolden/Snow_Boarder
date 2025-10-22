@@ -68,7 +68,6 @@ public class SlimeController : MonoBehaviour
         gameObject.GetComponent<Animator>().SetBool("SlimeDead", true);
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         Invoke("ByeSlime", 1);
-        Debug.Log("Slime DESTROYED!");
     }
     
     void ByeSlime()

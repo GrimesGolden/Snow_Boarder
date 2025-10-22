@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumpyController : MonoBehaviour
+public class HitController : MonoBehaviour
 {
     SlimeController parentScript;
 
