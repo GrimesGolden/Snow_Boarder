@@ -14,6 +14,7 @@ public class JumpyController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            other.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.up * 500); // bouncy
             parentScript.DestroySlime(); 
         }
     }
