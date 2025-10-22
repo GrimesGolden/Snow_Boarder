@@ -50,6 +50,6 @@ public class CrashDetector : MonoBehaviour
         Destroy(board);
         duckyAnimator.SetBool("IsExplode", true);
         GetComponent<PlayerController>().DisableControls();
-        Invoke("UpdateLevel", crashDelay);
+        Invoke("UpdateLevel", crashDelay); 
     }
 }
