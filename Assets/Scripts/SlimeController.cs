@@ -57,7 +57,7 @@ public class SlimeController : MonoBehaviour
             crashDetector.ExplodeDucky();
             // Set animator of slime to death anim
             gameObject.GetComponent<Animator>().SetBool("SlimeDead", true);
-            DestroySlime(other.gameObject.GetComponent<Rigidbody2D>());
+            DestroySlime();
             // Add a bounce effect
             // Get player rb2d, add a force to it, multiplied by slime bounce (see DataManager.cs)
             slimeBod.AddForce(Vector2.left * DataManager.I.GetSlimeJump());
@@ -80,7 +80,7 @@ public class SlimeController : MonoBehaviour
         slimeBod.AddRelativeForce(brakeForce);
     }
 
-    public void DestroySlime(Rigidbody2D playerBod)
+    public void DestroySlime()
 {
     // Zero out the player's vertical velocity first to avoid stacking with downward momentum.
     //Vector2 currentVel = playerBod.velocity;

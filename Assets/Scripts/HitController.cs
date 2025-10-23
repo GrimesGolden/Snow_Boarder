@@ -16,7 +16,8 @@ public class HitController : MonoBehaviour
         if (other.tag == "Player" || other.tag == "Board")
         {
             // Callback and destroy. 
-            parentScript.DestroySlime(other.GetComponent<Rigidbody2D>()); 
+            //other.attachedRigidbody.AddForce()
+            parentScript.DestroySlime(); 
             
         }
     }
