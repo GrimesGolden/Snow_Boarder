@@ -29,6 +29,11 @@ public class PlayerController : MonoBehaviour
     {
         LoadData(); // Load from DataManager
         surfaceEffector2D.speed = baseSpeed; // Standard speed activates. 
+        // Add an exclusion layer for Ducky. 
+        Physics2D.IgnoreLayerCollision(
+            LayerMask.NameToLayer("Player"),
+            LayerMask.NameToLayer("Exclude"),
+        true);
     }
 
     void Update()

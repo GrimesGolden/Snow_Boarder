@@ -46,10 +46,11 @@ public class CrashDetector : MonoBehaviour
         // Similar to a crash, but this specifically causes Ducky to dramatically explode.
         // Useful for enemies and other obstacles.
         SoundManager.PlaySound(SoundType.CRASH); // This will eventually be an explode sound.
+        // Delete the board so ducky doesn't explode on a snowboard. 
         GameObject board = GameObject.Find("Snowboard");
         Destroy(board);
         duckyAnimator.SetBool("IsExplode", true);
         GetComponent<PlayerController>().DisableControls();
-        Invoke("UpdateLevel", crashDelay); 
+        Invoke("UpdateLevel", DataManager.I.GetSlimeDelay()); // Explosion anim is approx twice as long as regular crash. 
     }
 }

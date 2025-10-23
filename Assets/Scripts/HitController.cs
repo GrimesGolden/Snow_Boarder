@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HitController : MonoBehaviour
-{
+{   
+    // Simple script to control the enemy hitbox. 
     SlimeController parentScript;
 
     void Start()
@@ -14,8 +15,9 @@ public class HitController : MonoBehaviour
     {
         if (other.tag == "Player" || other.tag == "Board")
         {
-            other.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.up * 500); // bouncy
-            parentScript.DestroySlime(); 
+            // Callback and destroy. 
+            parentScript.DestroySlime(other.GetComponent<Rigidbody2D>()); 
+            
         }
     }
 }
