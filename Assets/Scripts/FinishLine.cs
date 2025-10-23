@@ -34,7 +34,11 @@ public class FinishLine : MonoBehaviour
     void ReloadScene()
     {
         DataManager.I.DestroyMe(); // Destroy the DM so that we refresh with a new data set. 
-        SceneManager.LoadScene(0); // Reload from main menu fresh. 
+        // Load next scene in build settings hierarchy. 
+        // Wrap around using modulo operator. 
+        int nextIndex = (SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings;
+        SceneManager.LoadScene(nextIndex);
+
     }
     
     void LoadData()

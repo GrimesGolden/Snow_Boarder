@@ -798,7 +798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6420,7 +6420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: brakeForce
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: slimeBounce
@@ -6449,7 +6449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6611,7 +6611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7826193301753045503, guid: d188c88680fcfbb469b27b3a5391b13e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
