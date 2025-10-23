@@ -23,7 +23,7 @@ public class DataManager : MonoBehaviour
     [SerializeField] float baseSpeed = 25f; // 10-25 is a good standard. // Duckys base speed. 
 
     [SerializeField] float jumpForce = 35f; // 35f is a good standard. //Ducky's jump force which determines height. 
-
+    [SerializeField] float jumpDrag = 5f; // 5f is a good standard. //Ducky's jump drag which effects jumping resistance. 
     [SerializeField] float brakeForce = 5f; // 5-10f is a good standard. // Ducky's braking vector force. 
 
     [SerializeField] int appleValue = 1; // How many scoring points an apple is worth
@@ -125,6 +125,11 @@ public class DataManager : MonoBehaviour
     public float GetJumpForce()
     {
         return jumpForce;
+    }
+
+    public float GetJumpDrag()
+    {
+        return jumpDrag;
     }
     
     public float GetBrakeForce()

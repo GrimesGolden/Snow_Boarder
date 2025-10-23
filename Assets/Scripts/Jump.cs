@@ -25,11 +25,14 @@ public class Jump : MonoBehaviour
     {   
         // Accept a rigid body sprite to add jumping force. 
         if (canJump)
-        {
+        {   
+            // Apply an upwards force, with a slight dragging force to the left. 
             Vector2 forceJump = (Vector2.up) * DataManager.I.GetJumpForce();
-            Vector2 leftForce = (Vector2.left) * 5;
+            Vector2 leftForce = (Vector2.left) * DataManager.I.GetJumpDrag();
+            //player.AddRelativeForce(forceJump);
+            //player.AddRelativeForce(leftForce);
             player.AddForce(forceJump);
-            player.AddForce(leftForce); 
-        }
+            player.AddForce(leftForce);     
+        }     
     }
 }

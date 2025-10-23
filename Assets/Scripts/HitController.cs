@@ -15,8 +15,11 @@ public class HitController : MonoBehaviour
     {
         if (other.tag == "Player" || other.tag == "Board")
         {
-            // Callback and destroy. 
-            //other.attachedRigidbody.AddForce()
+            // Add a bounce effect for the player (pushing them back)
+            // Make sure to use relative force for an accurate bounce effect.
+            // Because we bounce relative to the direction hit. 
+            other.attachedRigidbody.AddRelativeForce(Vector2.up * DataManager.I.GetSlimeBounce());
+            // Callback and destroy.
             parentScript.DestroySlime(); 
             
         }

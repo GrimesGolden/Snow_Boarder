@@ -58,9 +58,6 @@ public class SlimeController : MonoBehaviour
             // Set animator of slime to death anim
             gameObject.GetComponent<Animator>().SetBool("SlimeDead", true);
             DestroySlime();
-            // Add a bounce effect
-            // Get player rb2d, add a force to it, multiplied by slime bounce (see DataManager.cs)
-            slimeBod.AddForce(Vector2.left * DataManager.I.GetSlimeJump());
         }
     }
     
@@ -82,15 +79,7 @@ public class SlimeController : MonoBehaviour
 
     public void DestroySlime()
 {
-    // Zero out the player's vertical velocity first to avoid stacking with downward momentum.
-    //Vector2 currentVel = playerBod.velocity;
-    //currentVel.y = 0f;
-    //playerBod.velocity = currentVel;
-
-    // Apply a fixed upward impulse for the bounce (consistent, not velocity-based).
-    //float bouncePower = DataManager.I.GetSlimeBounce();
-    //playerBod.AddForce(Vector2.up * bouncePower, ForceMode2D.Impulse);
-    // Move slime to the excluded layer so it won't collide with player anymore.
+    // Add the current slime to an excluded layer (can no longer collide with player)
     gameObject.layer = LayerMask.NameToLayer("Exclude");
 
     // Play death animation.
