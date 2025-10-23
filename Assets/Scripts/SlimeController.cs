@@ -24,26 +24,18 @@ public class SlimeController : MonoBehaviour
         slimeBod = gameObject.GetComponent<Rigidbody2D>();
         slimeTag = gameObject.tag; 
 
+        if (slimeTag == "Jumpy")
+        {
+            slimeBod.AddRelativeForce(Vector2.down * DataManager.I.GetSlimeJump());
+        }
+
     }
-    
+
     void Update()
     {
         if (slimeTag == "Slimy")
         {
             UpdateSlimy();
-        }
-        else if (slimeTag == "Jumpy")
-        {
-            UpdateJumpy(); 
-        }
-    }
-
-    void UpdateJumpy()
-    {
-        t += Time.deltaTime;
-        if(t >= 1)
-        {
-            Jump(); 
         }
     }
     
@@ -75,9 +67,7 @@ public class SlimeController : MonoBehaviour
     void Jump()
     {
         // Calculate a jump force multiplied by data manager. 
-        t = 0; 
-        Vector2 jumpForce = Vector2.up * DataManager.I.GetSlimeJump();
-        slimeBod.AddRelativeForce(jumpForce);
+        slimeBod.AddRelativeForce(Vector2.down * DataManager.I.GetSlimeJump());
     }
 
     void Attack()
