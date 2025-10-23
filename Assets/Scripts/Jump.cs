@@ -29,7 +29,7 @@ public class Jump : MonoBehaviour
             // Apply an upwards force, with a slight dragging force to the left. 
             Vector2 forceJump = (Vector2.up) * DataManager.I.GetJumpForce();
             Vector2 leftForce = (Vector2.left) * DataManager.I.GetJumpDrag();
-            //player.AddRelativeForce(forceJump);
+            //player.AddRelativeForce(forceJump); // Do NOT use relative, it works best with normal force, so physics play out naturally. 
             //player.AddRelativeForce(leftForce);
             player.AddForce(forceJump);
             player.AddForce(leftForce);     

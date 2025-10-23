@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEditor.ShaderGraph.Internal;
+using Unity.VisualScripting;
 
 public class DataManager : MonoBehaviour
 {
@@ -12,9 +13,6 @@ public class DataManager : MonoBehaviour
     const int MaxLives = 3; 
     [SerializeField] int lives; // The max amount of lives available. 
     [SerializeField] float crashDelay = 0.5f; // 0.5f is a good standard. // The time to wait before reloading scene after crash. 
-
-    [SerializeField] float slimeDelay = 1f; // 1f is a good standard. // Time to wait for processing of slime death animations. 
-
     [SerializeField] float finishDelay = 1f; // 1f is a good standard. // The time to wait before reloading after finish. 
     [SerializeField] float torqueAmount = 1f; // 1f is a good standard. // How fast Ducky rotates.
     [SerializeField] float boostSpeed = 450f; // 50 is a good standard.  // How fast Ducky boosts. 
@@ -40,9 +38,16 @@ public class DataManager : MonoBehaviour
     [SerializeField] float base_cam = 10f; // The standard camera distance. 
     [SerializeField] float medium_cam = 20f; // The distance the camera will zoom out after medium wait. 
     [SerializeField] float long_cam = 30f; // The distance the camera will zoom out. 
+     [SerializeField] float slimeDelay = 1f; // 1f is a good standard. // Time to wait for processing of slime death animations. 
     [SerializeField] float slimeBounce = 500f; //500f is a good amount // The force a slime enemy delivers upon death.
 
-    [SerializeField] float slimeJump = 350f; // 350f is good // The force a Jumpy variant of slime jumps with.  
+    [SerializeField] float slimeJump = 350f; // 350f is good // The force a Jumpy variant of slime jumps with.
+
+    [SerializeField] float slimeRefresh = 0.5f; // 0.5f is good  // The delay before next update of a moving slime
+
+    [SerializeField] float slimeMove = 350f; // Between 250 and 500 is good // The force with which a slime moves. 
+
+    [SerializeField] float slimeDrag = 5f; // Unknown // The drag jump on a moving slime. 
 
     void Awake()
     {
@@ -186,9 +191,24 @@ public class DataManager : MonoBehaviour
     {
         return slimeBounce;
     }
-    
+
     public float GetSlimeJump()
     {
-        return slimeJump; 
+        return slimeJump;
+    }
+
+    public float GetSlimeRefresh()
+    {
+        return slimeRefresh;
+    }
+
+    public float GetSlimeMove()
+    {
+        return slimeMove;
+    }
+    
+    public float GetSlimeDrag()
+    {
+        return slimeDrag; 
     }
 }

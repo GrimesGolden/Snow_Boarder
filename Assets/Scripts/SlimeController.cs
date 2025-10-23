@@ -1,14 +1,12 @@
-//using System.Collections;
-//using System.Collections.Generic;
-//using System.Numerics;
-//using Unity.VisualScripting;
-//using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class SlimeController : MonoBehaviour
 {   
-    // Controlling script for all slime enemies and variant types. 
+    // Controlling script for all slime enemies and variant types.
+
+    // Jumpy is a static slime that jumps in place.
+    // Slimy on the other hand "moves" around by bouncing, using updating forces.  
     CrashDetector crashDetector;
     Vector3 slimePos;
 
@@ -42,7 +40,7 @@ public class SlimeController : MonoBehaviour
     void UpdateSlimy()
     {
         t += Time.deltaTime; 
-        if(t >= 0.5f)
+        if(t >= DataManager.I.GetSlimeRefresh())
         {
             Attack(); 
         }
@@ -56,8 +54,8 @@ public class SlimeController : MonoBehaviour
             crashDetector = other.gameObject.GetComponent<CrashDetector>();
             crashDetector.ExplodeDucky();
             // Set animator of slime to death anim
-            gameObject.GetComponent<Animator>().SetBool("SlimeDead", true);
-            DestroySlime();
+            //gameObject.GetComponent<Animator>().SetBool("SlimeDead", true);
+            //DestroySlime();
         }
     }
     
@@ -71,10 +69,11 @@ public class SlimeController : MonoBehaviour
     {
         // The "AI" (not really) for the standard slime variant. 
         t = 0;
-        Vector2 jumpForce = Vector2.up * 150;
-        Vector2 brakeForce = Vector2.left * 200;
-        slimeBod.AddRelativeForce(jumpForce); 
-        slimeBod.AddRelativeForce(brakeForce);
+        DataManager dm = DataManager.I;
+        Vector2 jumpForce = Vector2.up * dm.GetSlimeDrag();
+        Vector2 brakeForce = Vector2.left * dm.GetSlimeMove(); 
+        slimeBod.AddForce(jumpForce); 
+        slimeBod.AddForce(brakeForce);
     }
 
     public void DestroySlime()

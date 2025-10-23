@@ -19,6 +19,8 @@ public class HitController : MonoBehaviour
             // Make sure to use relative force for an accurate bounce effect.
             // Because we bounce relative to the direction hit. 
             other.attachedRigidbody.AddRelativeForce(Vector2.up * DataManager.I.GetSlimeBounce());
+            gameObject.GetComponentInParent<BoxCollider2D>().enabled = false; // No double bounce please.
+            gameObject.GetComponentInParent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition; // freeze position
             // Callback and destroy.
             parentScript.DestroySlime(); 
             
