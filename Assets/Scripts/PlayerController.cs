@@ -64,10 +64,15 @@ public class PlayerController : MonoBehaviour
     }
 
     public void DisableControls()
-    {   
+    {
         // This is why public methods are useful. We need to tell this script to stop working from another script
         // i.e stop the control script FROM a crash detection script. 
-        canMove = false; 
+        canMove = false;
+    }
+    
+    public void EnableControls()
+    {
+        canMove = true; 
     }
 
     void ControlSpeed()

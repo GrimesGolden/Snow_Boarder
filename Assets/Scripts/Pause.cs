@@ -8,13 +8,17 @@ public class Pause : MonoBehaviour
 {
     // Handles pause menu and pause functionality. 
     bool GameIsPaused = false;
-    TextMeshProUGUI pauseText; 
-    GameObject player; 
+    TextMeshProUGUI pauseText;
+    GameObject player;
+
+    PlayerController playerController; 
     
     void Start()
     {
-        pauseText = GetComponentInChildren<TextMeshProUGUI>(true);  // Get the pause text. // The true argument says to search even inactive objects. 
+        pauseText = GetComponentInChildren<TextMeshProUGUI>(true);  // Get the pause text. 
+        // // The true argument says to search even inactive objects. 
         player = GameObject.Find("Ducky"); // Search through the entire hierarchy for ducky. 
+        playerController = player.GetComponent<PlayerController>(); // Use this to disable controls. 
         pauseText.enabled = false;
     }
     void Update()
@@ -23,11 +27,13 @@ public class Pause : MonoBehaviour
         {
             if (GameIsPaused)
             {
+                playerController.EnableControls();
                 Resume();
             }
             else if (!GameIsPaused)
             {
                 StopGame();
+                playerController.DisableControls(); 
             }
 
         }
