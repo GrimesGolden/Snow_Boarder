@@ -798,7 +798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2212,6 +2212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slimy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.11
@@ -2594,6 +2598,10 @@ PrefabInstance:
     - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_Name
       value: Slimy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4047,6 +4055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jumpy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7826193301753045503, guid: d188c88680fcfbb469b27b3a5391b13e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4469,6 +4481,10 @@ PrefabInstance:
     - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_Name
       value: Slimy (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6152,6 +6168,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 93014610528909129, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
+      propertyPath: surfaceEffector2D
+      value: 
+      objectReference: {fileID: 8157786642608528058}
     - target: {fileID: 894438004337415698, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -6400,7 +6420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: jumpForce
-      value: 50
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: slimeDrag
@@ -6449,7 +6469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6611,7 +6631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7826193301753045503, guid: d188c88680fcfbb469b27b3a5391b13e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7031,6 +7051,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b446835f202a6c64f8e1bca172d3600a, type: 3}
+--- !u!252 &8157786642608528058 stripped
+SurfaceEffector2D:
+  m_CorrespondingSourceObject: {fileID: 4062149569198057001, guid: b446835f202a6c64f8e1bca172d3600a, type: 3}
+  m_PrefabInstance: {fileID: 8157786642608528057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

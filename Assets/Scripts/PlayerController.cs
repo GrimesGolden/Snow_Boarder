@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     float baseSpeed; 
 
     Animator animator; 
-    SurfaceEffector2D surfaceEffector2D; 
+    [SerializeField] SurfaceEffector2D surfaceEffector2D; 
 
     bool canMove = true; 
 
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         brakeScript = GetComponent<Brake>(); 
         boostScript = GetComponent<Boost>(); // Used for Boost gameplay scripting. 
         rb2d = GetComponent<Rigidbody2D>(); // Used for torque control
-        surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>(); // Used for speed control.
+        //surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>(); // Used for speed control. // There may be multiple surface effecots. Serialize.
         GameObject gameManager = GameObject.Find("GameManager"); // Used to access dataManager
         dataManager = DataManager.I; // Used to load data. 
 

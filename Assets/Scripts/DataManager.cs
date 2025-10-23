@@ -83,7 +83,8 @@ public class DataManager : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(1);
+            int sceneIndex = SceneManager.GetActiveScene().buildIndex; 
+            SceneManager.LoadScene(sceneIndex);
         }
     }
 
