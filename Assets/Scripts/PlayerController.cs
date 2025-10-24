@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         true);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         //Lock the controls. 
         if (canMove)
