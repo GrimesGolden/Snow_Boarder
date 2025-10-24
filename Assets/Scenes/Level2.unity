@@ -513,6 +513,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Platform (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7569270343909503854, guid: 59641bc573d603e46b788a5361276cb9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8778113000369874472, guid: 59641bc573d603e46b788a5361276cb9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 44.48
@@ -1436,6 +1440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jumpy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7826193301753045503, guid: d188c88680fcfbb469b27b3a5391b13e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2093,6 +2101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jumpy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7826193301753045503, guid: d188c88680fcfbb469b27b3a5391b13e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2176,7 +2188,7 @@ Transform:
   m_GameObject: {fileID: 876245912}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 122.2, y: 25.1, z: 0}
+  m_LocalPosition: {x: 122.15, y: 25.1, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2197,6 +2209,10 @@ PrefabInstance:
     - target: {fileID: 7569270343909503854, guid: 59641bc573d603e46b788a5361276cb9, type: 3}
       propertyPath: m_Name
       value: Moving Platform (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569270343909503854, guid: 59641bc573d603e46b788a5361276cb9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8778113000369874472, guid: 59641bc573d603e46b788a5361276cb9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2743,6 +2759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moss Floating Platform (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6297199275783307644, guid: e56675aa5da1d6145ae24fb69ba947a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6480995378177775803, guid: e56675aa5da1d6145ae24fb69ba947a0, type: 3}
       propertyPath: m_Material
       value: 
@@ -2852,6 +2872,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -12.83
       objectReference: {fileID: 0}
+    - target: {fileID: 6032565716142519637, guid: c43343f1c3094f34b9b9f3ba71f8e42a, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2908,6 +2932,10 @@ PrefabInstance:
     - target: {fileID: 7826193301753045503, guid: d188c88680fcfbb469b27b3a5391b13e, type: 3}
       propertyPath: m_Name
       value: Jumpy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7826193301753045503, guid: d188c88680fcfbb469b27b3a5391b13e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3637,6 +3665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slimy
       objectReference: {fileID: 0}
+    - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
       value: 116.28662
@@ -3777,6 +3809,10 @@ PrefabInstance:
     - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_Name
       value: Slimy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4143,6 +4179,10 @@ PrefabInstance:
     - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_Name
       value: Slimy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4955,7 +4995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: brakeForce
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: slimeBounce
@@ -5070,6 +5110,10 @@ PrefabInstance:
     - target: {fileID: 6297199275783307644, guid: e56675aa5da1d6145ae24fb69ba947a0, type: 3}
       propertyPath: m_Name
       value: Moss Floating Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297199275783307644, guid: e56675aa5da1d6145ae24fb69ba947a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8279949166272049682, guid: e56675aa5da1d6145ae24fb69ba947a0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13607,7 +13651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4317110517089251232, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.53
+      value: 24.68
       objectReference: {fileID: 0}
     - target: {fileID: 4317110517089251232, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
       propertyPath: m_LocalPosition.z
