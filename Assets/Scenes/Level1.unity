@@ -6420,7 +6420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: jumpForce
-      value: 25
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: slimeDrag
@@ -6440,7 +6440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: brakeForce
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: slimeBounce
@@ -6449,6 +6449,10 @@ PrefabInstance:
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: slimeRefresh
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
+      propertyPath: torqueAmount
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
