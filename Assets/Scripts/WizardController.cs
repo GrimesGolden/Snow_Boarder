@@ -7,12 +7,14 @@ public class WizardController : MonoBehaviour
 {
     float t = 5;
     float hurtTimer = 5;
-    int health = -1; // how many times wizard can get hit. 
+    float bulletTimer = 5; 
+    int health = 3; // how many times wizard can get hit. 
 
     bool isAwake = false;
-    bool isHurt = false;
+   // bool isHurt = false;
 
-    [SerializeField] GameObject wizExplosion; 
+    [SerializeField] GameObject wizExplosion;
+    [SerializeField] GameObject bullet; 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -68,9 +70,9 @@ public class WizardController : MonoBehaviour
 
     void DestroyWizard()
     {
-        SpawnExplosion(); 
+        SpawnExplosion();   // FIX THESE
     }
-    
+
     void SpawnExplosion()
     {
         Vector2 pos = gameObject.transform.position;
@@ -81,28 +83,37 @@ public class WizardController : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("Bye hes dead now");
         }
-        else
-        {
-            Debug.Log("What the fuck.");
-        }
-
+    }
+    
+    void SpawnBullet()
+    {
+        Vector2 pos = gameObject.transform.position;
+        var r = gameObject.transform.rotation;
+        Instantiate(bullet, pos, r);
+        bulletTimer = 0; 
     }
     
     void FixedUpdate()
      {
 
-        if(isAwake && t >= 1)
-        {   
+        if (isAwake && t >= 1)
+        {
             t = 0;
             Dash();
-            gameObject.GetComponent<Animator>().SetBool("isDash", false);  
+            gameObject.GetComponent<Animator>().SetBool("isDash", false);
+        }
+
+        if(isAwake && bulletTimer >= 5)
+        {
+            SpawnBullet(); 
         }
 
         // t = 0;
         t += Time.fixedDeltaTime;
         hurtTimer += Time.fixedDeltaTime;
+        bulletTimer += Time.fixedDeltaTime; 
 
-        if(hurtTimer >= 5)
+        if(hurtTimer >= 5) // CAN MODIFY TO CHANGE REFRESH RATE OF DAMAGE TIMER
         {
              gameObject.GetComponent<SpriteRenderer>().color = Color.white;  // CHANGE COLOR back to standard after 5. 
         } 

@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wizExplosion: {fileID: 8332276612690197672, guid: 4055d2ad83c8ae942b44138215d37d03, type: 3}
+  bullet: {fileID: 8684994842833636738, guid: dcb21d4c9c478984d96d1f08c8232462, type: 3}
 --- !u!61 &4684590876432090364
 BoxCollider2D:
   m_ObjectHideFlags: 0
