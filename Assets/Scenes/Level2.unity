@@ -3963,6 +3963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slimy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.225815
