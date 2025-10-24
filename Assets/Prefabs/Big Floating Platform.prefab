@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5219123035996360812}
   - component: {fileID: 2376721284870185596}
   - component: {fileID: 3638851796981294653}
+  - component: {fileID: 7664824523952611902}
   m_Layer: 0
   m_Name: Big Floating Platform
   m_TagString: Terrain
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -277023937, guid: 7f30b8d8954174f4893b78968b70959a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -173,3 +174,16 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &7664824523952611902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7767509928296043301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2092253bd572be4f8ed4cdeaff09aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainEffector: {fileID: 0}

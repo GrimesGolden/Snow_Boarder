@@ -47,7 +47,11 @@ public class DataManager : MonoBehaviour
 
     [SerializeField] float slimeMove = 350f; // Between 250 and 500 is good // The force with which a slime moves. 
 
-    [SerializeField] float slimeDrag = 5f; // Unknown // The drag jump on a moving slime. 
+    [SerializeField] float slimeDrag = 5f; // Unknown // The drag jump on a moving slime.
+
+    [SerializeField] float platformRate = 0.1f; // The vertical speed of moving platforms. // 0.1 f is decent. 
+
+    [SerializeField] float platformHeight = 10f; // The max height of a floating platform. // 10f is decent.  
 
     void Awake()
     {
@@ -207,9 +211,19 @@ public class DataManager : MonoBehaviour
     {
         return slimeMove;
     }
-    
+
     public float GetSlimeDrag()
     {
-        return slimeDrag; 
+        return slimeDrag;
+    }
+
+    public float GetPlatformRate()
+    {
+        return platformRate;
+    }
+    
+    public float GetPlatformHeight()
+    {
+        return platformHeight;  
     }
 }
