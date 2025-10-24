@@ -29,7 +29,7 @@ public class SlimeController : MonoBehaviour
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (slimeTag == "Slimy")
         {

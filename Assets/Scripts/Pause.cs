@@ -17,7 +17,7 @@ public class Pause : MonoBehaviour
     {
         pauseText = GetComponentInChildren<TextMeshProUGUI>(true);  // Get the pause text. 
         // // The true argument says to search even inactive objects. 
-        player = GameObject.Find("Ducky"); // Search through the entire hierarchy for ducky. 
+        player = GameObject.FindWithTag("Player");; // Search through the entire hierarchy for ducky. 
         playerController = player.GetComponent<PlayerController>(); // Use this to disable controls. 
         pauseText.enabled = false;
     }

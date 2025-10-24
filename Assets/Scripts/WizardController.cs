@@ -7,10 +7,12 @@ public class WizardController : MonoBehaviour
 {
     float t = 5;
     float hurtTimer = 5;
-    int health = 3;
+    int health = -1; // how many times wizard can get hit. 
 
-    bool isAwake = false; 
-    bool isHurt = false; 
+    bool isAwake = false;
+    bool isHurt = false;
+
+    [SerializeField] GameObject wizExplosion; 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -39,10 +41,6 @@ public class WizardController : MonoBehaviour
 
     void Dash()
     {
-        //gameObject.GetComponent<Animator>().SetBool("isDash", true);
-        //Vector2 oldPos = gameObject.transform.position;
-        //oldPos.x += 5;
-        //gameObject.transform.position = oldPos;
         gameObject.GetComponent<Animator>().SetBool("isDash", true); // dash animation
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         GameObject player = players[0];
@@ -62,9 +60,32 @@ public class WizardController : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            gameObject.GetComponent<Animator>().SetBool("isDestroyed", true);
+            SpawnExplosion(); 
         }
         gameObject.GetComponent<Animator>().SetBool("isDash", false);
+    }
+
+    void DestroyWizard()
+    {
+        SpawnExplosion(); 
+    }
+    
+    void SpawnExplosion()
+    {
+        Vector2 pos = gameObject.transform.position;
+        var r = gameObject.transform.rotation;
+        Instantiate(wizExplosion, pos, r);
+        if (wizExplosion)
+        {
+            Destroy(gameObject);
+            Debug.Log("Bye hes dead now");
+        }
+        else
+        {
+            Debug.Log("What the fuck.");
+        }
+
     }
     
     void FixedUpdate()
