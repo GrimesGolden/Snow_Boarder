@@ -5,75 +5,104 @@ using UnityEngine;
 
 public class WizardController : MonoBehaviour
 {
-    float t = 5;
+    // Controller for the Wizard boss.
+    // Kinda glitchy tbh, but this was rushed at the end. 
+    GameObject player;
+    Animator wizAnim; 
+    
+    // Timers. 
+    float dashTimer = 5;
     float hurtTimer = 5;
-    float bulletTimer = 5; 
+    float bulletTimer = 0; 
+
+
     int health = 3; // how many times wizard can get hit. 
 
     bool isAwake = false;
-   // bool isHurt = false;
+    bool initialTrigger = true; 
+   
+    //Prefabs
+    [SerializeField] GameObject wizExplosion; // Explosion to spawn
+    [SerializeField] GameObject bullet;  // Bullet prefab to spawn
 
-    [SerializeField] GameObject wizExplosion;
-    [SerializeField] GameObject bullet; 
+    [SerializeField] GameObject portal;
+    // End prefab
+
+    // Data points, no gamemanager here, wizards a big boy he can handle himself. 
+    [SerializeField] float knockbackForce = 500f;
+    [SerializeField] float damageRefresh = 3.5f;
+
+    [SerializeField] float dashAnimationRefresh = 0.5f; 
+
+    [SerializeField] float teleportDistance = 10f;
+
+    [SerializeField] float bulletRate = 2f; 
+
+    [SerializeField] float dashRefresh = 1.5f;
+
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player"); // retrieve ducky. 
+        wizAnim = gameObject.GetComponent<Animator>(); // The wizards animation controller. 
+    }
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-            gameObject.GetComponent<Animator>().SetBool("playerDetected", true);
-            isAwake = true; 
+            isAwake = true;
+            if(initialTrigger)
+            {
+                bulletTimer = 0; // On initial trigger, wait a bit to start firing bullets. 
+                initialTrigger = false; 
+            }
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
-        {
-            gameObject.GetComponent<Animator>().SetBool("playerDetected", false);
-            isAwake = false;
-        }
+        // Nothing need yet, I dont want the wizard to ever sleep once awoken. he fights until the end. 
     }
     
     void OnCollisionEnter2D(Collision2D other) {
-        if(hurtTimer >= 5) // hurtwait
+        player.GetComponent<Rigidbody2D>().AddForce(Vector2.left * knockbackForce);//knockback jinx
+        if(hurtTimer >= damageRefresh) // hurtwait
         {
             Hurt();
-            hurtTimer = 0; 
+            //hurtTimer = 0; // Reset hurt timer. 
         } 
     }
 
     void Dash()
     {
-        gameObject.GetComponent<Animator>().SetBool("isDash", true); // dash animation
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-        GameObject player = players[0];
+        gameObject.GetComponent<Animator>().SetBool("isDash", true); // set dash animation
+        // Obtain the positions of both player and wizard. 
         Vector2 playerPos = player.transform.position;
         Vector2 wizPos = gameObject.transform.position;
-        wizPos.x = playerPos.x + 5;
-        wizPos.y = playerPos.y + 3;
-        gameObject.transform.position = wizPos; 
+
+        // Randomly teleport the wizard within a certain range. 
+        SpawnPortal(); // Spawn a portal. 
+        wizPos.x = playerPos.x + (Random.Range(1, teleportDistance));
+        wizPos.y = playerPos.y + (Random.Range(1,teleportDistance));
+        gameObject.transform.position = wizPos;
     }
 
     void Hurt()
     {
-        gameObject.GetComponent<Animator>().SetBool("wizardHurt", true);
         health--;
 
-        gameObject.GetComponent<SpriteRenderer>().color = Color.red;  // CHANGE COLOR.
+        gameObject.GetComponent<SpriteRenderer>().color = Color.red;  // CHANGE COLOR. //signifying damange
+        Vector2 pos = player.transform.position;
 
         if (health <= 0)
         {
-            gameObject.GetComponent<Animator>().SetBool("isDestroyed", true);
-            SpawnExplosion(); 
+            DestroyWizard();
         }
-        gameObject.GetComponent<Animator>().SetBool("isDash", false);
+        
+        hurtTimer = 0; // Reset hurt timer. 
     }
 
     void DestroyWizard()
-    {
-        SpawnExplosion();   // FIX THESE
-    }
-
-    void SpawnExplosion()
     {
         Vector2 pos = gameObject.transform.position;
         var r = gameObject.transform.rotation;
@@ -81,48 +110,55 @@ public class WizardController : MonoBehaviour
         if (wizExplosion)
         {
             Destroy(gameObject);
-            Debug.Log("Bye hes dead now");
         }
     }
-    
+
     void SpawnBullet()
     {
         Vector2 pos = gameObject.transform.position;
         var r = gameObject.transform.rotation;
         Instantiate(bullet, pos, r);
-        bulletTimer = 0; 
+        bulletTimer = 0;
+    }
+    
+    void SpawnPortal()
+    {
+        Vector2 pos = gameObject.transform.position;
+        var r = gameObject.transform.rotation;
+        Instantiate(portal, pos, r); 
     }
     
     void FixedUpdate()
-     {
-
-        if (isAwake && t >= 1)
+    {
+        // is it messy yes.
+        // am I refactoring it, no. 
+        if(dashTimer >= dashAnimationRefresh) 
         {
-            t = 0;
+            gameObject.GetComponent<Animator>().SetBool("isDash", false); // Stop dash animation. 
+        }
+        if (isAwake && dashTimer >= dashRefresh)
+        {   
+            //Reset and dash
+            dashTimer = 0;
             Dash();
-            gameObject.GetComponent<Animator>().SetBool("isDash", false);
         }
 
-        if(isAwake && bulletTimer >= 5)
-        {
-            SpawnBullet(); 
+        if (isAwake && bulletTimer >= bulletRate)
+        {   
+            // Spawn another bullet, hence the rate timer. 
+            SpawnBullet();
         }
 
-        // t = 0;
-        t += Time.fixedDeltaTime;
+        // Clock timers.
+        dashTimer += Time.fixedDeltaTime;
         hurtTimer += Time.fixedDeltaTime;
         bulletTimer += Time.fixedDeltaTime; 
 
-        if(hurtTimer >= 5) // CAN MODIFY TO CHANGE REFRESH RATE OF DAMAGE TIMER
-        {
-             gameObject.GetComponent<SpriteRenderer>().color = Color.white;  // CHANGE COLOR back to standard after 5. 
+        if(hurtTimer >= damageRefresh) // CAN MODIFY TO CHANGE REFRESH RATE OF DAMAGE TIMER
+        {   
+            // This visualizesresets the wizard so he can take damage again. 
+            // But don't actually call Hurt until hit again. 
+            gameObject.GetComponent<SpriteRenderer>().color = Color.white;  // CHANGE COLOR back to standard after 5. 
         } 
-       // if (t >= 5)
-      //  {
-      //      Dash();
-     //       gameObject.GetComponent<Animator>().SetBool("isDash", false);
-       //     t = 0;
-    //    }
-
     }
 }

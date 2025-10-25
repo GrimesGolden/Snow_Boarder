@@ -2832,6 +2832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ducky
       objectReference: {fileID: 0}
+    - target: {fileID: 1669778457742014995, guid: c43343f1c3094f34b9b9f3ba71f8e42a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2187482341483062273, guid: c43343f1c3094f34b9b9f3ba71f8e42a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -94.25
@@ -2875,6 +2879,10 @@ PrefabInstance:
     - target: {fileID: 6032565716142519637, guid: c43343f1c3094f34b9b9f3ba71f8e42a, type: 3}
       propertyPath: m_BodyType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837780245740644458, guid: c43343f1c3094f34b9b9f3ba71f8e42a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13637,13 +13645,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3575384101120928091, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
+      propertyPath: portal
+      value: 
+      objectReference: {fileID: 6693129118568763374, guid: a317a8b7108e115448dbce4754273596, type: 3}
+    - target: {fileID: 4317110517089251232, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.0104
+      objectReference: {fileID: 0}
     - target: {fileID: 4317110517089251232, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -82.4
+      value: -70.9535
       objectReference: {fileID: 0}
     - target: {fileID: 4317110517089251232, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.1
+      value: 17.66
       objectReference: {fileID: 0}
     - target: {fileID: 4317110517089251232, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13676,6 +13692,22 @@ PrefabInstance:
     - target: {fileID: 4317110517089251232, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684590876432090364, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
+      propertyPath: m_Size.x
+      value: 25.140179
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684590876432090364, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
+      propertyPath: m_Size.y
+      value: 42.817513
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684590876432090364, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.6863003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684590876432090364, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
+      propertyPath: m_Offset.y
+      value: -4.481346
       objectReference: {fileID: 0}
     - target: {fileID: 9002587001164353270, guid: 784b6d378d6b2574db9a788d2840c449, type: 3}
       propertyPath: m_Name
