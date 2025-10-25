@@ -589,6 +589,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 338a1debb4fcaf444be15435ed7df4e3, type: 3}
     - {fileID: 8300000, guid: 6522f67a015c57944a3b4c8da03b57ea, type: 3}
     - {fileID: 8300000, guid: c97763da20b9ee9409eb21feefd818de, type: 3}
+  - name: LAUGH
+    sounds: []
+  - name: WIZARD
+    sounds: []
 --- !u!82 &104201383
 AudioSource:
   m_ObjectHideFlags: 0
@@ -798,7 +802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2601,7 +2605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6172,37 +6176,9 @@ PrefabInstance:
       propertyPath: surfaceEffector2D
       value: 
       objectReference: {fileID: 8157786642608528058}
-    - target: {fileID: 894438004337415698, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1485178437369152357, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1485178437369152357, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1698544771482252367, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
       propertyPath: m_Name
       value: Ducky
-      objectReference: {fileID: 0}
-    - target: {fileID: 1698544771482252367, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1698544771482252367, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2282303636762946947, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2282303636762946947, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2282303636762946947, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6243,14 +6219,6 @@ PrefabInstance:
     - target: {fileID: 2282303636762946947, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2739900851703628201, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2903959759496634172, guid: a9558f4d4354143e3b9ff83658950f02, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6420,7 +6388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: jumpForce
-      value: 350
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: slimeDrag
@@ -6436,7 +6404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: boostSpeed
-      value: 25
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: brakeForce
@@ -6452,7 +6420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7683531583567748852, guid: 2560e865d01dd7648a7876114e92580e, type: 3}
       propertyPath: torqueAmount
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6473,7 +6441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3742831789345951061, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6205903011378934509, guid: 43c0db84210421946ab95b00fccb2487, type: 3}
       propertyPath: m_LocalPosition.x
