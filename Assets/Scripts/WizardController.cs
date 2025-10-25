@@ -8,7 +8,8 @@ public class WizardController : MonoBehaviour
     // Controller for the Wizard boss.
     // Kinda glitchy tbh, but this was rushed at the end. 
     GameObject player;
-    Animator wizAnim; 
+    Animator wizAnim;
+    AudioSource bossMusic; 
     
     // Timers. 
     float dashTimer = 5;
@@ -44,6 +45,7 @@ public class WizardController : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player"); // retrieve ducky. 
         wizAnim = gameObject.GetComponent<Animator>(); // The wizards animation controller. 
+        bossMusic = gameObject.GetComponent<AudioSource>(); 
     }
     
     void OnTriggerEnter2D(Collider2D other)
@@ -53,6 +55,8 @@ public class WizardController : MonoBehaviour
             isAwake = true;
             if(initialTrigger)
             {
+                bossMusic.Play();
+                SoundManager.PlaySound(SoundType.LAUGH);
                 bulletTimer = 0; // On initial trigger, wait a bit to start firing bullets. 
                 initialTrigger = false; 
             }
@@ -90,7 +94,7 @@ public class WizardController : MonoBehaviour
     void Hurt()
     {
         health--;
-
+        SoundManager.PlaySound(SoundType.LAUGH); // Play a laugh. 
         gameObject.GetComponent<SpriteRenderer>().color = Color.red;  // CHANGE COLOR. //signifying damange
         Vector2 pos = player.transform.position;
 
@@ -144,9 +148,11 @@ public class WizardController : MonoBehaviour
         }
 
         if (isAwake && bulletTimer >= bulletRate)
-        {   
+        {
             // Spawn another bullet, hence the rate timer. 
             SpawnBullet();
+            // Play a sound effect here vs dash, because bulletRate has the longer cooldown, and i dont want to spam sounds.
+            SoundManager.PlaySound(SoundType.WIZARD);
         }
 
         // Clock timers.
