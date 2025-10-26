@@ -132,6 +132,7 @@ MonoBehaviour:
   teleportDistance: 10
   bulletRate: 2
   dashRefresh: 1.5
+  txt: {fileID: 0}
 --- !u!61 &4684590876432090364
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -175,7 +176,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 30.392902, y: 27.062574}
+  m_Size: {x: 10, y: 10}
   m_EdgeRadius: 0
 --- !u!50 &4620452533905662704
 Rigidbody2D:

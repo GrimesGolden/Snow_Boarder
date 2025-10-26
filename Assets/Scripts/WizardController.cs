@@ -37,9 +37,11 @@ public class WizardController : MonoBehaviour
 
     [SerializeField] float teleportDistance = 10f;
 
-    [SerializeField] float bulletRate = 2f; 
+    [SerializeField] float bulletRate = 2f;
 
     [SerializeField] float dashRefresh = 1.5f;
+
+    [SerializeField] PopupText txt; 
 
     void Start()
     {
@@ -114,6 +116,7 @@ public class WizardController : MonoBehaviour
         Vector2 pos = gameObject.transform.position;
         var r = gameObject.transform.rotation;
         Instantiate(wizExplosion, pos, r);
+        txt.Show("You haven't seen the last of us Ducky...we're watching.");
         if (wizExplosion)
         {
             Destroy(gameObject);
