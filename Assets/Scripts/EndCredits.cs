@@ -27,10 +27,27 @@ public class EndCredits : MonoBehaviour
         }
         else if (t >= 7)
         {
-            txt.Show("One Day, Ducky had the world's best snowboarding run.");  
-            active = true; 
+            txt.Show("One Day, Ducky had the world's best snowboarding run.");
+            active = true;
         }
-    }    
+    }
+
+    void LevelTwo()
+    {
+        if (t >= 1 && t <= 5)
+        {   // run so perfect, so fast, that the elder gods themselves bore witness
+            txt.Show("But the run was too fast, too perfect...");
+        }
+        else if (t >= 7 && t <= 15)
+        {
+            txt.Show("The elder gods THEMSELVES bore witness...transporting Ducky to an Eldritch world");
+        }
+        else if (t >= 15 && t <= 20)
+        {
+            txt.Show("Help our brave Ducky get back to his world!!!");
+        }
+    }   
+    
     void ShowCredits()
     {
         if (t >= 0 && t <= 5)
@@ -68,7 +85,11 @@ public class EndCredits : MonoBehaviour
         }
         else if (sceneIndex == 1 && !active && DataManager.I.GetLives() == 3)
         {
-            LevelOne(); 
+            LevelOne();
+        }
+        else if (sceneIndex == 2 && !active && DataManager.I.GetLives() == 3)
+        {
+            LevelTwo(); 
         }
     }
 } 
