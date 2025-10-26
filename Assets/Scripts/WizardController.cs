@@ -91,8 +91,8 @@ public class WizardController : MonoBehaviour
 
         // Randomly teleport the wizard within a certain range. 
         SpawnPortal(); // Spawn a portal. 
-        wizPos.x = playerPos.x + (Random.Range(1, teleportDistance));
-        wizPos.y = playerPos.y + (Random.Range(1,teleportDistance));
+        wizPos.x = playerPos.x + (Random.Range(5f, teleportDistance));
+        wizPos.y = playerPos.y + (Random.Range(1f, 3f));
         gameObject.transform.position = wizPos;
     }
 
