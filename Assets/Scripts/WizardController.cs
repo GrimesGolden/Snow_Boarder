@@ -69,12 +69,15 @@ public class WizardController : MonoBehaviour
     }
     
     void OnCollisionEnter2D(Collision2D other) {
-        player.GetComponent<Rigidbody2D>().AddForce(Vector2.left * knockbackForce);//knockback jinx
-        if(hurtTimer >= damageRefresh) // hurtwait
+        if(other.gameObject.tag == "Player")
         {
-            Hurt();
-            //hurtTimer = 0; // Reset hurt timer. 
-        } 
+            player.GetComponent<Rigidbody2D>().AddForce(Vector2.left * knockbackForce);//knockback jinx
+            if(hurtTimer >= damageRefresh) // hurtwait
+            {
+                Hurt();
+                //hurtTimer = 0; // Reset hurt timer. 
+            } 
+        }
     }
 
     void Dash()

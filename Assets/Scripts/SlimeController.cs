@@ -84,6 +84,9 @@ public class SlimeController : MonoBehaviour
     // Play death animation.
     GetComponent<Animator>().SetBool("SlimeDead", true);
 
+    // Play slime sound. 
+    SoundManager.PlaySound(SoundType.SLIME); 
+    
     // Schedule destruction.
     Invoke(nameof(DelayedDestroy), DataManager.I.GetSlimeDelay());
 }

@@ -10,9 +10,8 @@ public class PopupText : MonoBehaviour
     void Awake()
     {
         text = GetComponent<TextMeshProUGUI>();
-        gameObject.SetActive(false); // could be false by default. 
+        gameObject.SetActive(false); // should be false by default. 
 
-        Show("Thanks for playing ducky's world - Jordan ");
     }
 
     public void Show(string message)
@@ -25,7 +24,6 @@ public class PopupText : MonoBehaviour
     void Update()
     {
         if (!gameObject.activeSelf) return;
-
         timer -= Time.deltaTime;
         if (timer <= 0f)
         {

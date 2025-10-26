@@ -20,7 +20,8 @@ public enum SoundType
     COFFEE,
     ERROR,
     LAUGH,
-WIZARD
+    WIZARD,
+    SLIME
 }
 
 // The audio sources will be renamed in edit mode. 
