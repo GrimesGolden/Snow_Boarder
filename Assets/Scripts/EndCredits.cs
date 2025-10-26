@@ -79,7 +79,7 @@ public class EndCredits : MonoBehaviour
         void FixedUpdate()
     {   
         t += Time.deltaTime;
-        if (sceneIndex == 3)
+        if (sceneIndex == 4)
         {
             ShowCredits();
         }
