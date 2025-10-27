@@ -56,7 +56,7 @@ public class WizardController : MonoBehaviour
             isAwake = true;
             if(initialTrigger)
             {   
-                 txt.Show("'You never should have come here Ducky...'-The Wizard");
+                 txt.Show("'You never should have come here Ducky...'");
                 bossMusic.Play();
                 SoundManager.PlaySound(SoundType.LAUGH);
                 bulletTimer = 0; // On initial trigger, wait a bit to start firing bullets. 
