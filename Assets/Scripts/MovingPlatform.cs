@@ -23,39 +23,41 @@ public class MovingPlatform : MonoBehaviour
         maxDepth = gameObject.transform.position.y; 
     }
 
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            // Instead of updating each frame, use collisions to match speed. 
-            myEffector.speed = mainEffector.speed;
-        }
-    }
-    
-    void Update()
+  //  void OnCollisionEnter2D(Collision2D other)
+  //  {
+ //       if (other.gameObject.tag == "Player")
+   //     {
+   //         // Instead of updating each frame, use collisions to match speed. 
+    //        myEffector.speed = mainEffector.speed;
+   //     }
+ //   }
+  //  
+    void FixedUpdate()
     {   
         // Time independant. 
         Vector2 oldPos = gameObject.transform.position;
-            
+
         if (!switchDirections)
         {
             Vector2 newPos = oldPos;
             newPos.y += DataManager.I.GetPlatformRate() * Time.deltaTime;
-            if(newPos.y >= maxHeight)
+            if (newPos.y >= maxHeight)
             {
-                switchDirections = true; 
+                switchDirections = true;
             }
-            gameObject.transform.position = newPos;  
+            gameObject.transform.position = newPos;
         }
         else if (switchDirections)
         {
             Vector2 newPos = oldPos;
             newPos.y -= DataManager.I.GetPlatformRate() * Time.deltaTime;
-            if(newPos.y <= maxDepth)
+            if (newPos.y <= maxDepth)
             {
-                switchDirections = false; 
+                switchDirections = false;
             }
-            gameObject.transform.position = newPos;  
+            gameObject.transform.position = newPos;
         }
+        
+        myEffector.speed = mainEffector.speed; // Finally match the speed of the effector to the main sprite shape. 
     }
 }

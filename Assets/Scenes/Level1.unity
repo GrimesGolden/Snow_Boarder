@@ -7165,7 +7165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2084926079117629196, guid: 3ea422dbefbff784cb4e2b6fa466a56a, type: 3}
       propertyPath: m_Name
-      value: Friend
+      value: Mally
       objectReference: {fileID: 0}
     - target: {fileID: 2370669418500936847, guid: 3ea422dbefbff784cb4e2b6fa466a56a, type: 3}
       propertyPath: surfaceEffector2D

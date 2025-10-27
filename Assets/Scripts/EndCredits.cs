@@ -44,7 +44,7 @@ public class EndCredits : MonoBehaviour
         }
         else if (t >= 15 && t <= 20)
         {
-            txt.Show("Help our brave Ducky get back to his world!!!");
+            txt.Show("Help our brave Ducky find his world, and return to his friends!!!");
         }
     }   
 
@@ -53,6 +53,10 @@ public class EndCredits : MonoBehaviour
         if (t >= 3 && t <= 5)
         {
             txt.Show("Where am I? Thought Ducky...");
+        }
+        else if (t >= 6 && t <= 10)
+        {
+            txt.Show("Happy Halloween!");
         }
     }
     
