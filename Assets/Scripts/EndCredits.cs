@@ -47,6 +47,14 @@ public class EndCredits : MonoBehaviour
             txt.Show("Help our brave Ducky get back to his world!!!");
         }
     }   
+
+    void LevelThree()
+    {
+        if (t >= 3 && t <= 5)
+        {
+            txt.Show("Where am I? Thought Ducky...");
+        }
+    }
     
     void ShowCredits()
     {
@@ -89,7 +97,12 @@ public class EndCredits : MonoBehaviour
         }
         else if (sceneIndex == 2 && !active && DataManager.I.GetLives() == 3)
         {
-            LevelTwo(); 
+            LevelTwo();
+        }
+        else if (sceneIndex == 3 && !active && DataManager.I.GetLives() == 3)
+        {   
+            // This is very bad code, and I am ashamed. I swear it's not usually like this...
+            LevelThree(); 
         }
     }
 } 

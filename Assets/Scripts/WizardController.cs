@@ -25,7 +25,6 @@ public class WizardController : MonoBehaviour
     //Prefabs
     [SerializeField] GameObject wizExplosion; // Explosion to spawn
     [SerializeField] GameObject bullet;  // Bullet prefab to spawn
-
     [SerializeField] GameObject portal;
     // End prefab
 
@@ -56,7 +55,8 @@ public class WizardController : MonoBehaviour
         {
             isAwake = true;
             if(initialTrigger)
-            {
+            {   
+                 txt.Show("'You never should have come here Ducky...'-The Wizard");
                 bossMusic.Play();
                 SoundManager.PlaySound(SoundType.LAUGH);
                 bulletTimer = 0; // On initial trigger, wait a bit to start firing bullets. 
@@ -116,7 +116,7 @@ public class WizardController : MonoBehaviour
         Vector2 pos = gameObject.transform.position;
         var r = gameObject.transform.rotation;
         Instantiate(wizExplosion, pos, r);
-        txt.Show("You haven't seen the last of us Ducky...we're watching.");
+        txt.Show("You haven't seen the last of us Ducky...we will be watching.");
         if (wizExplosion)
         {
             Destroy(gameObject);
