@@ -52,7 +52,6 @@ public class PlayerController : MonoBehaviour
         brakeScript = GetComponent<Brake>(); 
         boostScript = GetComponent<Boost>(); // Used for Boost gameplay scripting. 
         rb2d = GetComponent<Rigidbody2D>(); // Used for torque control
-        //surfaceEffector2D = FindObjectOfType<SurfaceEffector2D>(); // Used for speed control. // There may be multiple surface effecots. Serialize.
         GameObject gameManager = GameObject.Find("GameManager"); // Used to access dataManager
         dataManager = DataManager.I; // Used to load data. 
 
@@ -84,7 +83,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
-            brakeScript.HandleBrake(rb2d); 
+            brakeScript.HandleBrake(surfaceEffector2D); // Pass the surface effector. // I tried it with forces but it's didn't feel right. 
         }
         else if (Input.GetKey(KeyCode.Space))
         // Testing a jump ability. 

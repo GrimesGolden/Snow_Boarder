@@ -65,17 +65,17 @@ public class EndCredits : MonoBehaviour
 
         else if (t >= 5 && t <= 10)
         {
-            txt.Show("All sounds and assets downloaded for free, ripped from youtube with questionable software, or recorded by friends and family!");
+            txt.Show("All sounds and assets downloaded for free, ripped from youtube, or recorded by friends and family!");
         }
 
         else if (t >= 11 && t <= 15)
         {
-            txt.Show("Can I get an A now?");
+            txt.Show("No Ducks were harmed in the making of this game.");
         }
 
         else if (t >= 16 && t <= 20)
         {
-            txt.Show("It's true what they say...background music IS distracting");
+            txt.Show("Refactoring is overated");
         }
         
         else if (t >= 21 && t <= 30)

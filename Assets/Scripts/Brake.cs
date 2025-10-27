@@ -17,12 +17,12 @@ public class Brake : MonoBehaviour
         // Update will handle tracking. 
     }
 
-    public void HandleBrake(Rigidbody2D player)
+    public void HandleBrake(SurfaceEffector2D surface)
     {
         if (canBrake)
         {
-            Vector2 forceJump = (Vector2.left) * DataManager.I.GetBrakeForce();
-            player.AddForce(forceJump);
+            float brakeSpeed = DataManager.I.GetBrakeForce();
+            surface.speed = brakeSpeed; 
         }
     }
 }

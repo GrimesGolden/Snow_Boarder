@@ -17,6 +17,8 @@ public class PlatformController : MonoBehaviour
         myEffector.speed = mainEffector.speed;
     }
 
+    /*
+    
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -24,5 +26,12 @@ public class PlatformController : MonoBehaviour
             // Instead of updating each frame, use collisions to match speed. 
             myEffector.speed = mainEffector.speed;
         }
+    }
+    
+    */
+
+    void FixedUpdate()
+    {
+      myEffector.speed = mainEffector.speed; // All platforms mirror the main effector.   
     }
 }
