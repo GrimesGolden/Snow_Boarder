@@ -8,6 +8,9 @@ public class TxtTrigger : MonoBehaviour
     [SerializeField] PopupText txt;
 
     void OnTriggerEnter2D(Collider2D other) {
-        txt.Show("Quickly Ducky! Into the portal!...the wizard left this open."); 
+        if(other.tag == "Player")
+        {
+            txt.Show("Quickly Ducky! Into the portal!...the wizard left this open."); 
+        }
     }
 }
